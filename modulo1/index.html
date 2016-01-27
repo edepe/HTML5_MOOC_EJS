@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><title>Ejemplos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="zepto.min.js" ></script>
+<script type="text/javascript" src="FileSaver.js" ></script>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+    var w=window.innerWidth;
+    if (w<600){
+      $("#h1 h1").html("Editor interactivo");
+      $("#h1 p").html("Para ver los cambios pulse play");
+    }
+
+    $( window ).resize(function() {
+    	 w=window.innerWidth;
+    	 if (w<600){
+        	$("#h1 h1").html("Editor interactivo");
+          $("#h1 p").html("Para ver los cambios pulse play");
+        	$('.caja_visor').css({
+        	'display': 'none'
+        });
+        var mimenu = document.getElementById('menu');
+        mimenu.style.display = "none";
+      }else{
+        $("#h1 h1").html("Editor interactivo de los ejemplos JavaScript del módulo 4 de @HTML5MOOC");
+        $("#h1 p").html("Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima.");
+        $('.caja_visor').css({
+        	'display': 'block'
+        });	
+        var mimenu = document.getElementById('menu');
+        mimenu.style.display = "block";
+    	}	
+    });
+
+
+   var editor = $("#editor");
+
+   function poner_titulo(titulo){
+      var titulo_final = titulo.substring(titulo.indexOf("_")+1,titulo.indexOf(".")).replace(/_/g, ' ');
+      titulo_final = titulo_final[0].toUpperCase() + titulo_final.slice(1);
+
+      $("#titulo_ejemplo").html(titulo_final);
+   }
+
+   function mostrar(ejemplo){
+    editor.val(ejemplo);
+    ejecutar(ejemplo);
+   };
+
+
+   function ejecutar(ejemplo){
+    var iframe = document.getElementById('iframe');
+           
+    if(iframe.contentDocument) doc = iframe.contentDocument;
+    else if(iframe.contentWindow) doc = iframe.contentWindow.document;
+    else doc = iframe.document;
+     
+    doc.open();
+    doc.writeln(ejemplo);
+    doc.close();
+   }
+
+   function download_code(filename) {
+    var dataToDownload = $("#editor").val();
+
+    var blob = new Blob([dataToDownload], {type: "text/plain;charset=utf-8"});
+    saveAs(blob, filename);
+   }
+
+  $("nav a").on("click", function(){
+      var local = localStorage.getItem($(this).attr("title"));
+      if(local!=null){        
+        mostrar(local);
+      } else {
+        $.get($(this).attr("title"), "text", mostrar);
+      }      
+      poner_titulo($(this).attr("title"));
+      $("nav a").removeClass("active");
+      $(this).addClass("active");
+  	  if (w<600) {
+  	    var mimenu = document.getElementById('menu');
+        mimenu.style.display = "none";
+      }
+  });
+
+  $("nav select").change(function() {
+      var local = localStorage.getItem($(this).attr("title"));
+      if(local!=null){
+        mostrar(local);
+      } else {
+        $.get($(this).val(), "text", mostrar);
+      }     
+  });
+
+  $(".caja #actualizar").on("click", function(){
+    ejecutar(editor.val());
+	  var micontenedor = document.getElementById('cvisor');
+  	if (micontenedor.style.display == "block" && w<600) {
+      micontenedor.style.display = "none";
+    } else{
+  	  micontenedor.style.display = "block"
+  	}
+  });  
+  
+  $(".caja_visor #cerrar").on("click", function(){
+  	var micontenedor = document.getElementById('cvisor');
+  	if (micontenedor.style.display == "block") {
+     micontenedor.style.display = "none";
+    } else{
+  	  micontenedor.style.display = "block"
+  	}
+  });
+
+$(".selector").on("click", function(){
+	var mimenu = document.getElementById('menu');
+	if (mimenu.style.display == "block") {
+   mimenu.style.display = "none";
+  } else{
+	  mimenu.style.display = "block"
+	  }
+  });
+
+  $(".caja #reset").on("click", function(){
+      var r = confirm("Perderás tus cambios y volverás a la versión inicial. ¿Estás seguro?");
+      if (r == true) {
+          var tab = $(".active").attr("title");
+          $.get(tab, "text", mostrar);
+      }
+  });
+	
+
+  //load first tab
+  var primera_tab = "00a_date.htm";  
+  var local = localStorage.getItem(primera_tab);
+  if(local!=null){
+    mostrar(local);
+  } else {
+    $.get(primera_tab, "text", function(ejemplo){
+      mostrar(ejemplo);
+    }); 
+  } 
+  poner_titulo(primera_tab);
+  
+  //Ahora detectamos las features del browser a ver si habilitamos más opciones
+  //primero Subir fichero, para ello usaremos FileReader
+  if(window.FileReader) {
+    var fileInput = document.getElementById('fileInput');
+    var fileDisplayArea = $('#editor');    
+
+    function handle_file_input(e) {
+      var file = fileInput.files[0];
+      var textType = /text.*/;
+
+      if (file.type.match(textType)) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          fileDisplayArea.val(reader.result);
+          fileInput.removeEventListener('change', handle_file_input);
+          $(fileInput).val("");
+          fileInput.addEventListener('change', handle_file_input);
+        }
+
+        reader.readAsText(file);  
+      } else {
+        fileDisplayArea.innerText = "File not supported!"
+      }
+    }
+
+    fileInput.addEventListener('change', handle_file_input);
+  } else {
+    //the browser doesn't support the FileReader Object, so do this
+    $(".caja #subir").hide();
+  }
+    
+  //segundo file api para descargar el fichero. Para esto usamos Blob api
+  if(window.Blob) {
+    $(".caja #descargar").on("click", function(){
+      download_code("yourpage.html");
+    });
+  } else {
+    $(".caja #descargar").hide();
+  }
+
+  //tercero, localstorage para guardar en local
+  if(window.localStorage){
+    $(".caja #guardar").on("click", function(){
+      alert("Guardaremos el contenido de esta tab. Lo podrás recuperar la próxima vez que accedas. Para volver a la versión inicial haz click en 'reset'");
+      var tab = $(".active").attr("title");
+      localStorage.setItem(tab, $("#editor").val() );
+    });
+  }else{
+    $(".caja #guardar").hide();
+  }
+    
+
+    
+
+});
+</script>
+</head> 
+<body><div id="page-wrap">
+  <header class="main" id="h1">
+    <h1>Editor interactivo de los ejemplos JavaScript del módulo 1 de @HTML5MOOC</h1>
+    <p>Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima.</p>
+  </header>
+
+  <nav class="main" id="nav1">
+  <div class="selector"><img src="selector.png" width="58" height="35"></div>
+<ul id="menu">
+      <li><a href="javascript:void(0);" title="00a_date.htm" class="active">date</a></li>
+      <li><a href="javascript:void(0);" title="00b_date_CSS.htm" class="">date2</a></li>
+      <li><a href="javascript:void(0);" title="01a_mi_primera_pagina0.html" class="">1</a></li>
+      <li><a href="javascript:void(0);" title="01b_mi_primera_pagina1.html" class="">2</a></li>
+      <li><a href="javascript:void(0);" title="01c_mi_primera_pagina2.html" class="">3</a></li>
+      <li><a href="javascript:void(0);" title="01d_mi_primera_pagina3.html" class="">4</a></li>
+      <li><a href="javascript:void(0);" title="01e_mi_primera_pagina4.html" class="">4</a></li>
+      <li><a href="javascript:void(0);" title="02a_parrafo.html" class="">p</a></li>
+      <li><a href="javascript:void(0);" title="02b_parrafo_con estilos.html" class="">p2</a></li>
+      <li><a href="javascript:void(0);" title="02c_parrafo_con estilos2.html" class="">p3</a></li>
+      <li><a href="javascript:void(0);" title="02d_valores_defecto.html" class="">default</a></li>
+      <li><a href="javascript:void(0);" title="02e_listas.html" class="">list</a></li>
+      <li><a href="javascript:void(0);" title="02f_cita.html" class="">cite</a></li>
+      <li><a href="javascript:void(0);" title="02g_pre.html" class="">pre</a></li>
+      <li><a href="javascript:void(0);" title="02h_abbr.html" class="">abbr</a></li>
+      <li><a href="javascript:void(0);" title="02i_br.html" class="">br</a></li>
+      <li><a href="javascript:void(0);" title="02j_indices.html" class="">sub</a></li>
+      <li><a href="javascript:void(0);" title="02k_tabla.html" class="">table</a></li>
+      <li><a href="javascript:void(0);" title="03a_ej_url.html" class="">url</a></li>
+      <li><a href="javascript:void(0);" title="03b_ej_hiperenlaces.html" class="">a</a></li>
+      <li><a href="javascript:void(0);" title="03c_ej_id.html" class="">id</a></li>
+    </ul>
+
+  </nav>
+  <div class="clear"> </div>
+  <div class="contenedor">
+  <div class="caja">
+    <span id="texto_ejemplo">Ejemplo:</span>
+    <span id="titulo_ejemplo">Título</span>
+    <div class="action_button" id="actualizar"><img id="actualizar_png" src="play.png" width="26" height="26" title="ejecutar" alt="actualizar"></div>
+    <div class="action_button" id="descargar"><img id="descargar_png" src="download.png" width="26" height="26" title="descargar mis cambios" alt="descargar"></div>
+    <div class="action_button" id="guardar"><img id="guardar_png" src="save.png" width="26" height="26" title="guardar localmente" alt="guardar"></div>
+    <div class="action_button" id="subir" class="image-upload">
+      <label for="fileInput">
+        <img id="subir_png" src="upload.png" width="26" height="26" title="subir fichero" alt="subir">
+      </label>
+
+      <input id="fileInput" type="file"/>
+    </div>
+    <div class="action_button" id="reset"><img id="reset_png" src="reset.png" width="26" height="26" title="resetear el contenido" alt="reset"></div>
+       
+    <div class="area">
+      <textarea id="editor"></textarea>
+      </div>
+  </div>
+    <div class="caja_visor" id="cvisor">
+      <p id="texto_resultado">Resultado:</p>
+      <div id="cerrar"><img id="cerrar_png" src="cerrar.png" width="26" height="26" alt="cerrar"></div>
+      <iframe id="iframe" class="" frameborder="0"></iframe>
+    </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+</body> 
+</html>
