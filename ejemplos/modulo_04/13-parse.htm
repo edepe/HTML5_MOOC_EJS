@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo string</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<pre> <!-- la marca <pre> mantiene el formato del texto -->
+<script type="text/javascript">
+
+document.writeln("parseInt('60')        => " + parseInt('60'));
+document.writeln("parseInt(’60.45')     => " + parseInt('60.45'));
+document.writeln("parseInt('0060')      => " + parseInt('0060'));
+document.writeln("parseInt('xx')        => " + parseInt('xx'));
+document.writeln();
+document.writeln("parseFloat('1e2')     => " + parseFloat("1e2"));
+document.writeln("parseFloat('1.3e2')   => " + parseFloat("1.3e2"));
+document.writeln("parseFloat('xx1e2')   => " + parseFloat("xx1e2"));
+document.writeln();
+document.writeln('parseInt("1010")      => ' + parseInt("1010"));
+document.writeln('parseInt("1010",2)    => ' + parseInt("1010",2));
+document.writeln();
+document.writeln('parseInt("12",8)      => ' + parseInt("12",8));
+document.writeln('parseInt("10",10)     => ' + parseInt("10",10));
+document.writeln('parseInt("a",16)      => ' + parseInt("a",16));
+document.writeln();
+document.writeln('parseInt("01xx")      => ' + parseInt("01xx"));
+document.writeln('parseInt("01+4")      => ' + parseInt("01+4"));
+</script>
+</pre>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html><html>
+<head><title>Ejemplo</title><meta charset="utf-8">
+
+<script type="text/javascript">
+
+function vaciar () {
+  document.getElementById("n1").value = "";
+}
+
+function sumatorio() {
+  var num = document.getElementById("n1");
+
+  var lista = num.value.split(",");
+
+  var i = 0, acc = 0;
+  while ( i < lista.length )  
+    acc += +lista[ i++ ];
+  
+  num.value = acc;
+}
+</script>
+</head><body>
+
+  Número:
+  <input type="text" id="n1" onclick="vaciar()">
+  <p>
+  <button onclick="sumatorio()">Σ x</button>
+</body></html>
+

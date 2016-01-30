@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="UTF-8">
+</head><body>
+<h3>Potencia de 2</h3>
+
+<script type="text/javascript">
+
+function pot2 (n) { // calcula 2^n
+  var res =  1;
+  while (n !== 0) {
+    res = res * 2;
+    n = n - 1;
+  } 
+  return res;
+}
+
+
+document.write("2^10 (1K) = " + pot2(10));
+document.write("<br>");
+document.write("2^20 (1M) = " + pot2(20));
+</script>
+</body>
+</html>

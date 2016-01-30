@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html><head><title>Evento jQuery</title><meta charset="UTF-8">
+
+<script type="text/javascript" src="jquery-2.1.4.min.js" > </script>
+<script type="text/javascript" src="jquery.mobile-1.4.5.min.js" ></script>
+
+
+<script type="text/javascript">
+  $(function(){ 
+    var img = $('#i1');
+
+    img.on('dblclick swiperight', function(){img.attr('src', 'wait.png')});
+    img.on('click',    function(){img.attr('src', 'scare.png')});
+  });
+</script>
+</head>
+<body>
+  <h4>Eventos jQuery</h4>
+
+  <img src="wait.png" id="i1">
+</body>
+</html>
+

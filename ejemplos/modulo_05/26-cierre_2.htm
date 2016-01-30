@@ -1,0 +1,30 @@
+<!DOCTYPE html><html>
+<head><title>Ejemplo de función</title><meta charset="UTF-8"></head>
+
+<body>
+
+<h2>Ámbito</h2>
+
+<pre> <!-- la marca <pre> mantiene el formato: blancos y líneas -->
+// definición equivalente a la anterior
+// sin dar nombres a las funciones.
+
+var entero_unico = function () {
+     var contador = 0;
+     return function () { return contador++; };
+} ();
+
+<script type="text/javascript">
+
+var entero_unico = function () {
+     var contador = 0;
+     return function () { return contador++; };
+} ();
+
+document.writeln("entero_unico()   => " + entero_unico());
+document.writeln("entero_unico()   => " + entero_unico());
+document.writeln("entero_unico()   => " + entero_unico());
+</script>
+</pre>
+</body>
+</html>

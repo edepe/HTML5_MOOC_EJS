@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Ejemplo</title>
+<meta charset="utf-8">
+
+<script type="text/javascript">
+  var cajetin, num = 0, op;
+
+  function inic () {cajetin = document.getElementById("num");}
+  function vaciar () {cajetin.value = "";}  
+
+  function mas()   { calcular(op); op = "+"; }
+  function menos() { calcular(op); op = "-"; }
+  function igual () { calcular(op); num = 0; op = ""}
+
+  function calcular(op) {
+    if (op === "+") {cajetin.value = (+num + +cajetin.value)}
+    if (op === "-") {cajetin.value = (+num - +cajetin.value)}
+    num = cajetin.value;
+  }
+</script>
+</head>
+<body onLoad="inic()">
+  Número:<br>
+  <input type="text" size="20" id="num" onClick="vaciar()"><br>
+  <button onClick="mas()">+</button>
+  <button onClick="menos()">-</button>
+  <button onClick="igual()">=</button>
+</body>
+</html>

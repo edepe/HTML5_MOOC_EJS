@@ -1,0 +1,45 @@
+<!DOCTYPE html><html>
+<head><title>Ejemplo de función</title><meta charset="UTF-8"></head>
+
+<body>
+
+<h2>Ámbito</h2>
+
+<pre> <!-- la marca <pre> mantiene el formato: blancos y líneas -->
+function enteroUnico () {
+     var contador = 0;
+     function contar () { return contador++; };
+     return contar;
+};
+    // asignamos el objeto función contar 
+var entero_unico = enteroUnico();
+
+    // enteroUnico() se puede instanciar 
+    // otra vez creando otro contador único 
+var otro_entero_unico = enteroUnico();
+
+<script type="text/javascript">
+
+function enteroUnico () {
+     var contador = 0;
+     function contar () { return contador++; };
+     return contar;
+};
+       // asignamos el objeto función contar 
+var entero_unico = enteroUnico();
+
+    // enteroUnico() se puede instanciar 
+    // otra vez creando otro contador único 
+var otro_entero_unico = enteroUnico();
+
+document.writeln("entero_unico()   => " + entero_unico());
+document.writeln("entero_unico()   => " + entero_unico());
+document.writeln("entero_unico()   => " + entero_unico());
+document.writeln();
+document.writeln("otro_entero_unico() => " + otro_entero_unico());
+document.writeln("otro_entero_unico() => " + otro_entero_unico());
+document.writeln("otro_entero_unico() => " + otro_entero_unico());
+</script>
+</pre>
+</body>
+</html>

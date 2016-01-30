@@ -1,0 +1,39 @@
+<!DOCTYPE html><html>
+<head><title>Ejemplo de función</title><meta charset="UTF-8"></head>
+
+<body>
+
+<h2>Parámetros de función</h2>
+
+<pre> <!-- la marca <pre> mantiene el formato: blancos y líneas -->
+  var comer = function(persona, comida) {
+     return (persona + " come " + comida);
+  };
+
+  var x = comer;   // asigna a x el código de la función
+
+  <script type="text/javascript">
+
+  var comer = function(persona, comida) {
+     return (persona + " come " + comida);
+  };
+
+  var x = comer;      // asigna a x el código de la función
+
+  document.writeln("x('José','paella')   => " + x('José','paella'));
+  document.writeln("  x()                  => " + x());
+  document.writeln();
+
+  </script>
+
+  var y = comer(); // asigna a y el resultado de invocar la función     
+
+  <script type="text/javascript">
+
+  var y = comer();  // asigna a y el resultado de invocar la función     
+
+  document.writeln("y                    => " + y);
+  </script>
+</pre>
+</body>
+</html>

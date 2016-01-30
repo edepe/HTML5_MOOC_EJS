@@ -1,0 +1,20 @@
+<!DOCTYPE html><html>
+<head><meta charset="UTF-8">
+</head>
+<body>
+<h3>Función veces con forEach(..)</h3>
+
+<script type="text/javascript">
+
+function veces (letra, frase) {
+  var n = 0;           // inicialización del bucle
+  frase.split('').forEach(function(x){ if (letra===x){++n;}});
+  return n;
+};
+
+var l='a', f='la casa roja';
+document.write('La frase "' + f + '" tiene ' 
+	         + veces(l,f) + ' veces la letra ' + l);
+</script>
+</body>
+</html>

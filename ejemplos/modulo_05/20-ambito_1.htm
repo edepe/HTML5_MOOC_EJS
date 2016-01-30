@@ -1,0 +1,24 @@
+<!DOCTYPE html><html>
+<head><title>Ejemplo de función</title><meta charset="UTF-8"></head>
+
+<body>
+
+<h2>Ámbito</h2>
+
+<pre> <!-- la marca <pre> mantiene el formato: blancos y líneas -->
+<script type="text/javascript">
+
+var ambito = "global";
+
+function ambitoLocal () {
+     var ambito = "local";
+     return ambito;
+};
+
+document.writeln("ambito        => " + ambito);
+document.writeln();
+document.writeln("ambitoLocal() => " + ambitoLocal());
+</script>
+</pre>
+</body>
+</html>

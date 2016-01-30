@@ -1,0 +1,30 @@
+<!DOCTYPE html><html>
+<head><title>Ejemplo de función</title><meta charset="UTF-8"></head>
+
+<body>
+
+<h2>Ámbito</h2>
+
+<pre> <!-- la marca <pre> mantiene el formato: blancos y líneas -->
+<script type="text/javascript">
+
+var s1 = "Hola, ";
+
+function exterior () {
+     var s2  = "que ";
+
+     function interior () { 
+         var s3 = "tal";
+         return s1 + s2 + s3;
+     }
+
+     return interior;
+};
+
+document.writeln("exterior()     => " + exterior());
+document.writeln();
+document.writeln("exterior()()   => " + exterior()());
+</script>
+</pre>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo string</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<pre> <!-- la marca <pre> mantiene el formato del texto -->
+
+function comer (persona, comida) {
+     persona  = (persona !== undefined) ? persona : 'Alguién';
+     comida   = (comida  !== undefined) ? comida  : 'algo';
+     return (persona + " come " + comida);      
+};
+
+</script>
+<script type="text/javascript">
+function comer (persona, comida) {
+     persona  = (persona !== undefined) ? persona : 'Alguién';
+     comida   = (comida  !== undefined) ? comida  : 'algo';
+     return (persona + " come " + comida);      
+};
+
+document.writeln("comer('José','paella')   => " + comer('José','paella'));
+document.writeln("comer('José')            => " + comer('José'));
+document.writeln('comer()                  => ' + comer());
+</script>
+</pre>
+</body>
+</html>

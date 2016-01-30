@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo string</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<pre> <!-- la marca <pre> mantiene el formato del texto -->
+<script type="text/javascript">
+
+document.writeln("La Ñ en ISO-8859-1 es:   \xd1");
+document.writeln("La á en ISO-8859 es:     \xe1");
+document.writeln();
+document.writeln("Backslash  \\  debe escaparse");
+document.writeln();
+document.writeln("El Euro en UNICODE es:       \u20ac");
+document.writeln("El Yen japonés ISO-8859 es:  \xa5");
+document.writeln();
+document.writeln('"Ciudad"[1]                      => ' + "Ciudad"[1]);
+document.writeln();
+document.writeln('"Ciudad".charCodeAt(1)           => ' + "Ciudad".charCodeAt(1));
+document.writeln('String.fromCharCode(105)         => ' + String.fromCharCode(105));
+document.writeln();
+document.writeln('"Ciudad".substring(3,5)          => ' + "Ciudad".substring(3,5));
+document.writeln('"Ciudad".substring(3,5).length   => ' + "Ciudad".substring(3,5));
+</script>
+</pre>
+</body>
+</html>
