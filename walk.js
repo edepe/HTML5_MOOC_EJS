@@ -55,7 +55,7 @@ function dirTree(filename, order) {
 var outputFilename = folder + '.json';
 var myData = dirTree(folder, 0);
 
-fs.writeFile(outputFilename, JSON.stringify(myData, null, 4), function(err) {
+fs.writeFile(outputFilename, JSON.stringify(myData.children, null, 4), function(err) {
     if(err) {
       console.log(err);
     } else {

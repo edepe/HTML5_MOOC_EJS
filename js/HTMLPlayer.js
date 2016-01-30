@@ -14,11 +14,15 @@ HTMLPlayer.CORE = (function(H,$,undefined){
 
   var editor;
   var w;
+  var structure;
 
   var init = function(options){
     editor = $("#editor");
     w = window.innerWidth;
 
+    $.getJSON("ejemplos.json", function(json){
+        structure = json;
+    });
     _inicializaEnventos();
     _loadFirstTab();
   };
