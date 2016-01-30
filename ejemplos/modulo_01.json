@@ -1,0 +1,267 @@
+{
+    "path": "modulo_01",
+    "name": "modulo_01",
+    "title": "modulo_01",
+    "type": "folder",
+    "children": [
+        {
+            "path": "modulo_01/01_mi_primera_pagina",
+            "name": "01_mi_primera_pagina",
+            "title": "modulo_01/01_mi_primera_pagina",
+            "type": "folder",
+            "children": [
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/menu_flex_a.html",
+                    "name": "menu_flex_a.html",
+                    "title": 1,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/menu_flex_b.html",
+                    "name": "menu_flex_b.html",
+                    "title": 2,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/mi_primera_pagina0.html",
+                    "name": "mi_primera_pagina0.html",
+                    "title": 3,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/mi_primera_pagina1.html",
+                    "name": "mi_primera_pagina1.html",
+                    "title": 4,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/mi_primera_pagina2.html",
+                    "name": "mi_primera_pagina2.html",
+                    "title": 5,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/mi_primera_pagina_con imagen.html",
+                    "name": "mi_primera_pagina_con imagen.html",
+                    "title": 6,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/01_mi_primera_pagina/valores_defecto.html",
+                    "name": "valores_defecto.html",
+                    "title": 7,
+                    "type": "file"
+                }
+            ]
+        },
+        {
+            "path": "modulo_01/02_Estructura_HTML",
+            "name": "02_Estructura_HTML",
+            "title": "modulo_01/02_Estructura_HTML",
+            "type": "folder",
+            "children": [
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_abbr.html",
+                    "name": "02_abbr.html",
+                    "title": 1,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_br.html",
+                    "name": "02_br.html",
+                    "title": 2,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_caracteres_especiales.html",
+                    "name": "02_caracteres_especiales.html",
+                    "title": 3,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_cita.html",
+                    "name": "02_cita.html",
+                    "title": 4,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_div01.html",
+                    "name": "02_div01.html",
+                    "title": 5,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_div02.html",
+                    "name": "02_div02.html",
+                    "title": 6,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_div03.html",
+                    "name": "02_div03.html",
+                    "title": 7,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_div04.html",
+                    "name": "02_div04.html",
+                    "title": 8,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_div05.html",
+                    "name": "02_div05.html",
+                    "title": 9,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_html5.html",
+                    "name": "02_html5.html",
+                    "title": 10,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_indices.html",
+                    "name": "02_indices.html",
+                    "title": 11,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_listas.html",
+                    "name": "02_listas.html",
+                    "title": 12,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_parrafo.html",
+                    "name": "02_parrafo.html",
+                    "title": 13,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_parrafo_con estilos.html",
+                    "name": "02_parrafo_con estilos.html",
+                    "title": 14,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_parrafo_con estilos2.html",
+                    "name": "02_parrafo_con estilos2.html",
+                    "title": 15,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_pre.html",
+                    "name": "02_pre.html",
+                    "title": 16,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_tabla.html",
+                    "name": "02_tabla.html",
+                    "title": 17,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/02_utf8.html",
+                    "name": "02_utf8.html",
+                    "title": 18,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/02_Estructura_HTML/images",
+                    "name": "images",
+                    "title": "modulo_01/02_Estructura_HTML/images",
+                    "type": "folder",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "path": "modulo_01/03_herencia_CSS",
+            "name": "03_herencia_CSS",
+            "title": "modulo_01/03_herencia_CSS",
+            "type": "folder",
+            "children": [
+                {
+                    "path": "modulo_01/03_herencia_CSS/03 _clases.html",
+                    "name": "03 _clases.html",
+                    "title": 1,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_arbol.html",
+                    "name": "03_arbol.html",
+                    "title": 2,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_arbol_ej.html",
+                    "name": "03_arbol_ej.html",
+                    "title": 3,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_bloques_html5.html",
+                    "name": "03_bloques_html5.html",
+                    "title": 4,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_prioridad.html",
+                    "name": "03_prioridad.html",
+                    "title": 5,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_prioridad_h1.html",
+                    "name": "03_prioridad_h1.html",
+                    "title": 6,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores01.html",
+                    "name": "03_selectores01.html",
+                    "title": 7,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores02.html",
+                    "name": "03_selectores02.html",
+                    "title": 8,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores03.html",
+                    "name": "03_selectores03.html",
+                    "title": 9,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores04.html",
+                    "name": "03_selectores04.html",
+                    "title": 10,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores05.html",
+                    "name": "03_selectores05.html",
+                    "title": 11,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores06.html",
+                    "name": "03_selectores06.html",
+                    "title": 12,
+                    "type": "file"
+                },
+                {
+                    "path": "modulo_01/03_herencia_CSS/03_selectores07.html",
+                    "name": "03_selectores07.html",
+                    "title": 13,
+                    "type": "file"
+                }
+            ]
+        }
+    ]
+}

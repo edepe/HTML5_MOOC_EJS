@@ -1,0 +1,10 @@
+{
+  "name": "Walker",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "walk": "node walk.js modulo_01"
+  },
+  "dependencies": {
+  }
+}
