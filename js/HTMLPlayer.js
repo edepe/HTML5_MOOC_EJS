@@ -18,6 +18,9 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   var modulocargado;
   var aceditor;
   var path_relativo = '';
+  var indicemodulo;
+  var indicefolder;
+  var indicetab;
 
   var init = function(options){
     editor = $("#editor");
@@ -26,13 +29,24 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     $.getJSON("ejemplos.json", function(json){
         structure = json;
         var options = '';
+        if(window.localStorage){
+          indicemodulo = localStorage.getItem("indicemodulo") ? localStorage.getItem("indicemodulo") : 0;
+          indicefolder = localStorage.getItem("indicefolder") ? localStorage.getItem("indicefolder") : 0;
+          indicetab = localStorage.getItem("indicetab") ? localStorage.getItem("indicetab") : 0;
+        } else {
+          indicemodulo = 0;
+          indicefolder = 0;
+          indicetab = 0;
+        }
+        var isselected = '';
         for (var i=0;i<structure.length;i++){
-           options += '<option value="'+ i + '">' + structure[i].name + '</option>';
+           isselected = i==indicemodulo ? 'selected':'';
+           options += '<option value="'+ i + '" '+isselected+'>' + structure[i].name + '</option>';
         }
         $('#modulos').append(options);
         _inicializaEnventos();
-        _loadModule(0);
         _initACEEditor();
+        _loadModule(indicemodulo, indicefolder, indicetab);
     });
   };
 
@@ -63,7 +77,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
       $("#guardar").on("click", function(){
         alert("Guardaremos el contenido de esta tab. Lo podrás recuperar la próxima vez que accedas. Para volver a la versión inicial haz click en 'reset'");
         var tab = $(".tab.active").attr("path");
-        localStorage.setItem(tab, $("#editor").val() );
+        localStorage.setItem(tab, aceditor.getValue());
       });
     }else{
       $("#guardar").hide();
@@ -105,22 +119,30 @@ HTMLPlayer.CORE = (function(H,$,undefined){
 
     //cuando cambia el selector de modulos
     $("#modulos").change(function () {
-      _loadModule($("#modulos option:selected").val());
+      indicemodulo = $("#modulos option:selected").val();
+      _loadModule(indicemodulo,0,0);
     });
 
     $(document).on("click", "nav a.moduletab", function(){
-        var foldercontent = modulocargado.children[$(this).attr("pos")];
-        _loadSubTabs(foldercontent);
+        indicefolder = $(this).attr("pos");
+        var foldercontent = modulocargado.children[indicefolder];
+        _loadSubTabs(foldercontent,0);
         $("nav a.moduletab").removeClass("moduleactive");
         $(this).addClass("moduleactive");
     });
 
     $(document).on("click", "nav a.tab", function(){
-        var local = localStorage.getItem($(this).attr("path"));
-        if(local!=null){
-          _mostrar(local);
+        indicetab = $(this).attr("pos");
+        if(window.localStorage && localStorage.getItem($(this).attr("path"))!=null){
+          _mostrar(localStorage.getItem($(this).attr("path")));
         } else {
           $.get($(this).attr("path"), "text", _mostrar);
+        }
+        if(window.localStorage){
+          //al cambiar de tab guardamos en localstorage qué esta guardado, para volver
+          localStorage.setItem("indicemodulo",indicemodulo);
+          localStorage.setItem("indicefolder",indicefolder);
+          localStorage.setItem("indicetab",indicetab);
         }
         _poner_titulo($(this).attr("title"));
         $("nav a.tab").removeClass("active");
@@ -195,51 +217,43 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
   };
 
-  //funcion que carga la interfaz para el módulo de posición "index" en el array "structure"
+  //funcion que carga la interfaz para el módulo de posición "indicemodulo" en el array "structure"
   //se encarga de mirar si tiene carpetas y si las tiene crea una primera fila de tabs
   //y carga las primeras subtabs
   //si no son carpetas, esta primera fila no se muestra y directamente llama a las subtabs
-  var _loadModule = function(index){
-    modulocargado = structure[index];
+  //en las dos filas de tabs marca por defecto "indicefolder" e "indicetab"
+  var _loadModule = function(indicemodulo, indicefolder, indicetab){
+    modulocargado = structure[indicemodulo];
     var hijos = modulocargado.children;
     if(hijos[0] && hijos[0].type==="folder"){
       var lis = '';
+      var extraclass;
       for (var i=0;i < hijos.length;i++){
-         lis += '<li><a href="javascript:void(0);" title="'+hijos[i].name+'" pos="'+i+'" class="moduletab">'+hijos[i].name+'</a></li>';
+         extraclass = indicefolder==i ? "activetab":"";
+         lis += '<li><a href="javascript:void(0);" title="'+hijos[i].name+'" pos="'+i+'" class="moduletab '+extraclass+'">'+hijos[i].name+'</a></li>';
       }
       $("#menutop").show();
       $("#menutop").html(lis);
       //cargamos las subtabs de la primera carpeta que será la seleccionada por defecto
-      _loadSubTabs(hijos[0]);
+      _loadSubTabs(hijos[indicefolder], indicetab);
     } else {
       //no hay carpetas, así que cargamos las subtabs de children que son archivos
       $("#menutop").hide();
-      _loadSubTabs(modulocargado);
+      indicefolder = -1; //asi es como marcamos que no hay nivel de tabs superior, para guardarlo en localstorage
+      _loadSubTabs(modulocargado, indicetab);
     }
   };
 
-  var _loadSubTabs = function(subtabs){
+  var _loadSubTabs = function(subtabs, indicetab){
     path_relativo = subtabs.path;
     var lis = '';
     var children = subtabs.children;
     for (var i=0;i < children.length;i++){
-       lis += '<li><a href="javascript:void(0);" title="'+children[i].name+'" path="'+children[i].path+'" class="tab">'+children[i].title+'</a></li>';
+       lis += '<li><a href="javascript:void(0);" title="'+children[i].name+'" pos="'+i+'" path="'+children[i].path+'" class="tab">'+children[i].title+'</a></li>';
     }
     $("#menu").html(lis);
-  };
-
-  var _loadFirstTab = function(){
-    //load first tab
-    var primera_tab = "00a_date.htm";
-    var local = localStorage.getItem(primera_tab);
-    if(local!=null){
-      _mostrar(local);
-    } else {
-      $.get(primera_tab, "text", function(ejemplo){
-        _mostrar(ejemplo);
-      });
-    }
-    _poner_titulo(primera_tab);
+    //lanzamos un click en la tab de orden "indicetab"
+    $($("#menu li a")[indicetab]).click();
   };
 
   var _poner_titulo = function (titulo){
