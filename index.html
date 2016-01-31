@@ -8,12 +8,18 @@
   <script type="text/javascript" src="js/FileSaver.js" ></script>
   <script type="text/javascript" src="js/HTMLPlayer.js"></script>
 
+  <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/ace/mode-html.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/ace/theme-chrome.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/ace/worker-html.js" type="text/javascript" charset="utf-8"></script>
+
   <link href="css/estilo.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
   <div id="page-wrap">
     <header class="main" id="botonera">
+      <select id="modulos"></select>
       <div class="action_button" id="actualizar"><img id="actualizar_png" src="images/play.png" width="26" height="26" title="ejecutar" alt="actualizar"></div>
       <div class="action_button" id="descargar"><img id="descargar_png" src="images/download.png" width="26" height="26" title="descargar mis cambios" alt="descargar"></div>
       <div class="action_button" id="guardar"><img id="guardar_png" src="images/save.png" width="26" height="26" title="guardar localmente" alt="guardar"></div>
@@ -30,30 +36,15 @@
       <div class="action_button" id="info_sign"><img id="info_sign_png" src="images/info_sign.png" width="26" height="26" title="Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima." alt="Ayuda"></div>
     </header>
 
+    <nav id="navtop">
+      <ul id="menutop">
+
+      </ul>
+    </nav>
+
     <nav class="main" id="nav1">
       <div class="selector"><img src="images/selector.png" width="58" height="35"></div>
       <ul id="menu">
-        <li><a href="javascript:void(0);" title="00a_date.htm" class="active tab">date</a></li>
-        <li><a href="javascript:void(0);" title="00b_date_CSS.htm" class="tab">date2</a></li>
-        <li><a href="javascript:void(0);" title="01a_mi_primera_pagina0.html" class="tab">1</a></li>
-        <li><a href="javascript:void(0);" title="01b_mi_primera_pagina1.html" class="tab">2</a></li>
-        <li><a href="javascript:void(0);" title="01c_mi_primera_pagina2.html" class="tab">3</a></li>
-        <li><a href="javascript:void(0);" title="01d_mi_primera_pagina3.html" class="tab">4</a></li>
-        <li><a href="javascript:void(0);" title="01e_mi_primera_pagina4.html" class="tab">4</a></li>
-        <li><a href="javascript:void(0);" title="02a_parrafo.html" class="tab">p</a></li>
-        <li><a href="javascript:void(0);" title="02b_parrafo_con estilos.html" class="tab">p2</a></li>
-        <li><a href="javascript:void(0);" title="02c_parrafo_con estilos2.html" class="tab">p3</a></li>
-        <li><a href="javascript:void(0);" title="02d_valores_defecto.html" class="tab">default</a></li>
-        <li><a href="javascript:void(0);" title="02e_listas.html" class="tab">list</a></li>
-        <li><a href="javascript:void(0);" title="02f_cita.html" class="tab">cite</a></li>
-        <li><a href="javascript:void(0);" title="02g_pre.html" class="tab">pre</a></li>
-        <li><a href="javascript:void(0);" title="02h_abbr.html" class="tab">abbr</a></li>
-        <li><a href="javascript:void(0);" title="02i_br.html" class="tab">br</a></li>
-        <li><a href="javascript:void(0);" title="02j_indices.html" class="tab">sub</a></li>
-        <li><a href="javascript:void(0);" title="02k_tabla.html" class="tab">table</a></li>
-        <li><a href="javascript:void(0);" title="03a_ej_url.html" class="tab">url</a></li>
-        <li><a href="javascript:void(0);" title="03b_ej_hiperenlaces.html" class="tab">a</a></li>
-        <li><a href="javascript:void(0);" title="03c_ej_id.html" class="tab">id</a></li>
       </ul>
     </nav>
 
@@ -65,7 +56,7 @@
           <span id="titulo_ejemplo">Título</span>
 
           <div class="area">
-            <textarea id="editor"></textarea>
+            <div id="editor"></div>
             </div>
         </div>
 

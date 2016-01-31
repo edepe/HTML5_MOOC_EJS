@@ -14,26 +14,13 @@ HTMLPlayer.CORE = (function(H,$,undefined){
 
   var editor;
   var w;
-  var structure;
-  var modulocargado;
-  var aceditor;
-  var path_relativo = '';
 
   var init = function(options){
     editor = $("#editor");
     w = window.innerWidth;
 
-    $.getJSON("ejemplos.json", function(json){
-        structure = json;
-        var options = '';
-        for (var i=0;i<structure.length;i++){
-           options += '<option value="'+ i + '">' + structure[i].name + '</option>';
-        }
-        $('#modulos').append(options);
-        _inicializaEnventos();
-        _loadModule(0);
-        _initACEEditor();
-    });
+    _inicializaEnventos();
+    _loadFirstTab();
   };
 
   //METODOS PRIVADOS
@@ -43,6 +30,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     //primero Subir fichero, para ello usaremos FileReader
     if(window.FileReader) {
       var fileInput = document.getElementById('fileInput');
+      var fileDisplayArea = $('#editor');
       fileInput.addEventListener('change', _handle_file_input);
     } else {
       //the browser doesn't support the FileReader Object, so do this
@@ -62,7 +50,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     if(window.localStorage){
       $("#guardar").on("click", function(){
         alert("Guardaremos el contenido de esta tab. Lo podrás recuperar la próxima vez que accedas. Para volver a la versión inicial haz click en 'reset'");
-        var tab = $(".tab.active").attr("path");
+        var tab = $(".active").attr("title");
         localStorage.setItem(tab, $("#editor").val() );
       });
     }else{
@@ -78,14 +66,14 @@ HTMLPlayer.CORE = (function(H,$,undefined){
       var reader = new FileReader();
 
       reader.onload = function(e) {
-        aceditor.setValue(reader.result,1);
+        fileDisplayArea.val(reader.result);
         fileInput.removeEventListener('change', _handle_file_input);
         $(fileInput).val("");
         fileInput.addEventListener('change', _handle_file_input);
       }
       reader.readAsText(file);
     } else {
-      aceditor.setValue("File not supported!",1);
+      fileDisplayArea.innerText = "File not supported!"
     }
   }
 
@@ -103,24 +91,12 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     	}
     });
 
-    //cuando cambia el selector de modulos
-    $("#modulos").change(function () {
-      _loadModule($("#modulos option:selected").val());
-    });
-
-    $(document).on("click", "nav a.moduletab", function(){
-        var foldercontent = modulocargado.children[$(this).attr("pos")];
-        _loadSubTabs(foldercontent);
-        $("nav a.moduletab").removeClass("moduleactive");
-        $(this).addClass("moduleactive");
-    });
-
-    $(document).on("click", "nav a.tab", function(){
-        var local = localStorage.getItem($(this).attr("path"));
+    $("nav a.tab").on("click", function(){
+        var local = localStorage.getItem($(this).attr("title"));
         if(local!=null){
           _mostrar(local);
         } else {
-          $.get($(this).attr("path"), "text", _mostrar);
+          $.get($(this).attr("title"), "text", _mostrar);
         }
         _poner_titulo($(this).attr("title"));
         $("nav a.tab").removeClass("active");
@@ -128,7 +104,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
 
     $("#actualizar").on("click", function(){
-      _ejecutar();
+      _ejecutar(editor.val());
   	  var micontenedor = document.getElementById('cvisor');
     	if (micontenedor.style.display == "block" && w<600) {
         micontenedor.style.display = "none";
@@ -159,7 +135,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         var r = confirm("Perderás tus cambios y volverás a la versión inicial. ¿Estás seguro?");
         if (r == true) {
             var tab = $(".active").attr("title");
-            $.get(path_relativo + "/" + tab, "text", _mostrar);
+            $.get(tab, "text", _mostrar);
         }
     });
 
@@ -195,39 +171,6 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
   };
 
-  //funcion que carga la interfaz para el módulo de posición "index" en el array "structure"
-  //se encarga de mirar si tiene carpetas y si las tiene crea una primera fila de tabs
-  //y carga las primeras subtabs
-  //si no son carpetas, esta primera fila no se muestra y directamente llama a las subtabs
-  var _loadModule = function(index){
-    modulocargado = structure[index];
-    var hijos = modulocargado.children;
-    if(hijos[0] && hijos[0].type==="folder"){
-      var lis = '';
-      for (var i=0;i < hijos.length;i++){
-         lis += '<li><a href="javascript:void(0);" title="'+hijos[i].name+'" pos="'+i+'" class="moduletab">'+hijos[i].name+'</a></li>';
-      }
-      $("#menutop").show();
-      $("#menutop").html(lis);
-      //cargamos las subtabs de la primera carpeta que será la seleccionada por defecto
-      _loadSubTabs(hijos[0]);
-    } else {
-      //no hay carpetas, así que cargamos las subtabs de children que son archivos
-      $("#menutop").hide();
-      _loadSubTabs(modulocargado);
-    }
-  };
-
-  var _loadSubTabs = function(subtabs){
-    path_relativo = subtabs.path;
-    var lis = '';
-    var children = subtabs.children;
-    for (var i=0;i < children.length;i++){
-       lis += '<li><a href="javascript:void(0);" title="'+children[i].name+'" path="'+children[i].path+'" class="tab">'+children[i].title+'</a></li>';
-    }
-    $("#menu").html(lis);
-  };
-
   var _loadFirstTab = function(){
     //load first tab
     var primera_tab = "00a_date.htm";
@@ -243,59 +186,36 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   };
 
   var _poner_titulo = function (titulo){
-     var titulo_final = titulo.substring(3,titulo.indexOf(".")).replace(/_/g, ' ');
+     var titulo_final = titulo.substring(titulo.indexOf("_")+1,titulo.indexOf(".")).replace(/_/g, ' ');
      titulo_final = titulo_final[0].toUpperCase() + titulo_final.slice(1);
 
      $("#titulo_ejemplo").html(titulo_final);
   }
 
-  var _mostrar = function(ejemplo){
-   aceditor.setValue(ejemplo, 1);
-   _ejecutar();
+  var _mostrar = function (ejemplo){
+   editor.val(ejemplo);
+   _ejecutar(ejemplo);
   };
 
-  //ejecuta siempre lo que hay en el editor, no se lo paso como parámetro
-  //porque hay que añadirle una tab <base> para los paths relativos
-  //y eso es mejor hacerlo con el aceditor
-  var _ejecutar = function (){
-    var content = aceditor.getValue();
 
-    var parser = new DOMParser();
-    var my = parser.parseFromString(content, "text/html");
-    //añadimos etiqueta <base> para los paths relativos
-    var base = document.createElement('base');
-    base.setAttribute("href", "/" + path_relativo + "/");
-    //doc.head.appendChild(base);
-    my.head.insertBefore(base, my.head.firstChild);
+  var _ejecutar = function (ejemplo){
+   var iframe = document.getElementById('iframe');
 
-    //lo escribimos en el iframe
-    var iframe = document.getElementById('iframe');
-    if(iframe.contentDocument) doc = iframe.contentDocument;
-    else if(iframe.contentWindow) doc = iframe.contentWindow.document;
-    else doc = iframe.document;
-    doc.open();
-    doc.writeln("<!DOCTYPE html>" + my.documentElement.outerHTML);
-    doc.close();
+   if(iframe.contentDocument) doc = iframe.contentDocument;
+   else if(iframe.contentWindow) doc = iframe.contentWindow.document;
+   else doc = iframe.document;
+
+   doc.open();
+   doc.writeln(ejemplo);
+   doc.close();
   }
 
   var _download_code = function (filename) {
-   var dataToDownload = aceditor.getValue();
+   var dataToDownload = $("#editor").val();
 
    var blob = new Blob([dataToDownload], {type: "text/plain;charset=utf-8"});
    saveAs(blob, filename);
   }
-
-  var _initACEEditor = function(){
-		aceditor = ace.edit("editor");
-    aceditor.getSession().setMode("ace/mode/html");
-    aceditor.setTheme("ace/theme/chrome");
-		aceditor.$blockScrolling = Infinity;
-
-		document.getElementById('editor').style.fontSize='14px';
-		aceditor.setShowPrintMargin(false);
-
-		aceditor.getSession().setTabSize(2);
-	};
 
   return {
   		init 					: init

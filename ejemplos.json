@@ -168,13 +168,6 @@
                         "name": "02_utf8.html",
                         "title": "18",
                         "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/images",
-                        "name": "images",
-                        "title": "ejemplos/modulo_01/02_Estructura_HTML/images",
-                        "type": "folder",
-                        "children": []
                     }
                 ]
             },
@@ -355,13 +348,6 @@
                         "name": "04_line_height.html",
                         "title": "13",
                         "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/images",
-                        "name": "images",
-                        "title": "ejemplos/modulo_02/01_Estructura_CSS/images",
-                        "type": "folder",
-                        "children": []
                     }
                 ]
             },
