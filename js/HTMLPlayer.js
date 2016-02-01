@@ -185,7 +185,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         }
     });
 
-    $("#result_view").on("click", function(){
+    $("#edit_view").on("click", function(){
         $("#ceditor").show();
         $("#cvisor").hide();
 
@@ -200,7 +200,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
       $("#hybrid_view").addClass("selected");
     });
 
-    $("#edit_view").on("click", function(){
+    $("#result_view").on("click", function(){
       $("#cvisor").show();
       $("#ceditor").hide();
       $(".action_button").removeClass("selected");
