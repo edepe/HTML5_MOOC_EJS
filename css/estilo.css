@@ -4,6 +4,7 @@
     font-family: 'fira';
     src: url('../fonts/FiraSans-Regular.woff');
 }
+
 @media (max-width: 600px) {
 	  #page-wrap {
 		width: 100%;
@@ -80,11 +81,12 @@
 		border-bottom-width: 1px;
 		border-bottom-style: solid;
 		border-bottom-color: #FFF;
+		outline: none;
 
 	}
 	#page-wrap #navtop ul li a:hover {
 		color: #4C4C4C;
-		background-color: #4dbcc9;
+		background-color: #FC0;
 	}
 	#page-wrap #navtop ul a.active {
 		background-color: #4c4c4c;
@@ -123,10 +125,11 @@
 		border-bottom-width: 1px;
 		border-bottom-style: solid;
 		border-bottom-color: #FFF;
+		outline: none;
 	}
 	#page-wrap #nav1 ul li a:hover {
 		color: #4C4C4C;
-		background-color: #4dbcc9;
+		background-color: #FC0;
 	}
 	#page-wrap #nav1 ul a.active {
 		background-color: #4c4c4c;
@@ -153,16 +156,13 @@
 	padding-right: 8px;
 	padding-left: 8px;
 	float: left;
-	width: 32%;
-	height: 93%;
+	width: 38%;
+	height: 98%;
 	}
 	#page-wrap #nav1 ul#menu {
 	list-style-type: none;
 	margin: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0.5em;
+	padding-left: 1em;
 	display: block;
 	}
 	#page-wrap .caja {
@@ -170,14 +170,14 @@
 	padding-bottom: 0.5em;
 	padding-left: 0.5em;
 	float: left;
-	width: 58%;
+	width: 60%;
 	height: 98%;
 	}
 	#page-wrap .caja .area #editor {
 	width: 100%;
 	}
 	#page-wrap #iframe {
-	width: 93%;
+	width: 100%;
 	}
 	#cvisor{
 	  display: block;
@@ -209,12 +209,12 @@
 		color: #FFF;
 		text-decoration: none;
 		margin-right: 0.4em;
-
+		outline: none;
 		font-size: small;
 	}
 	#page-wrap #navtop ul li a:hover {
 		color: #4C4C4C;
-		background-color: #4dbcc9;
+		background-color: #FC0;
 	}
 	#page-wrap #navtop ul a.active {
 		background-color: #4c4c4c;
@@ -234,13 +234,14 @@
 		color: #FFF;
 		text-decoration: none;
 		margin-right: 0.4em;
-		-webkit-border-radius: 5px 5px 0px 0px;
-		border-radius: 5px 5px 0px 0px;
+		/*-webkit-border-radius: 5px 5px 0px 0px;
+		border-radius: 5px 5px 0px 0px;*/
 		font-size: small;
+		outline: none;
 	}
 	#page-wrap #nav1 ul li a:hover {
 		color: #4C4C4C;
-		background-color: #4dbcc9;
+		background-color: #FC0;
 	}
 	#page-wrap #nav1 ul a.active {
 		background-color: #4c4c4c;
@@ -271,7 +272,7 @@ body{
   width: 100%;
   min-height: 40px;
   border-bottom: 1px solid gray;
-  /*background: #ccc;*/
+  background: #ccc;
 
 }
 
@@ -281,8 +282,8 @@ body{
 
 #page-wrap .caja {
 	background-color: #4c4c4c;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	/*-webkit-border-radius: 5px;
+	border-radius: 5px;*/
 }
 .action_button {
 	height: 40px;
@@ -331,13 +332,13 @@ body{
 #page-wrap .caja_visor {
 	background-color: #4C4C4C;
 	padding-bottom: 36px;
-	-webkit-border-radius: 5px 5px 0px 0px;
-	border-radius: 5px 5px 0px 0px;
+	/*-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;*/
 
 }
 #page-wrap #iframe {
 	background-color: #FFF;
-	height: 87%;
+	height: 95%;
 	padding: 5px;
 }
 #descripcion {
@@ -367,6 +368,7 @@ body{
 	position: relative;
 	height: 83%;
 	width: 100%;
+	padding: 0 0.4em;
 }
 
 #fileInput {
@@ -378,7 +380,7 @@ body{
 }
 
 .selected{
-  background: red;
+  background: #4dbcc9;
   color: white;
 }
 .separador{
@@ -389,7 +391,9 @@ select{
 	margin: 8px !important;
 }
 
-
+.runner{
+	background-color: #4dbcc9;
+}
 
 
 
