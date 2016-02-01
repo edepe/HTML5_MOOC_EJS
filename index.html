@@ -15,25 +15,64 @@
 
   <link href="css/estilo.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="page-wrap">
     <header class="main" id="botonera">
+
       <select id="modulos"></select>
-      <div class="action_button" id="actualizar"><img id="actualizar_png" src="images/play.png" width="26" height="26" title="ejecutar" alt="actualizar"></div>
-      <div class="action_button" id="descargar"><img id="descargar_png" src="images/download.png" width="26" height="26" title="descargar mis cambios" alt="descargar"></div>
-      <div class="action_button" id="guardar"><img id="guardar_png" src="images/save.png" width="26" height="26" title="guardar localmente" alt="guardar"></div>
-      <div class="action_button" id="subir" class="image-upload">
+
+      <div class="action_button separador" id="actualizar" data-toggle="tooltip" data-placement="bottom" title="Ejecutar">
+        <!--<img id="actualizar_png" src="images/play.png" width="26" height="26" title="ejecutar" alt="actualizar">-->
+        <i class="fa fa-play 2x"></i>
+      </div>
+
+
+      <div class="action_button" id="descargar" data-toggle="tooltip" data-placement="bottom" title="Descargar cambios">
+        <!--<img id="descargar_png" src="images/download.png" width="26" height="26" title="descargar mis cambios" alt="descargar">-->
+        <i class="fa fa-download"></i>
+      </div>
+      <div class="action_button" id="guardar" data-toggle="tooltip" data-placement="bottom" title="Guardar">
+        <!--<img id="guardar_png" src="images/save.png" width="26" height="26" title="guardar localmente" alt="guardar">-->
+        <i class="fa fa-save"></i>
+      </div>
+      <div class="action_button separador" id="subir" class="image-upload" data-toggle="tooltip" data-placement="bottom" title="Subir fichero">
         <label for="fileInput">
-          <img id="subir_png" src="images/upload.png" width="26" height="26" title="subir fichero" alt="subir">
+          <!--<img id="subir_png" src="images/upload.png" width="26" height="26" title="subir fichero" alt="subir">-->
+          <i class="fa fa-upload"></i>
         </label>
         <input id="fileInput" type="file"/>
       </div>
-      <div class="action_button" id="reset"><img id="reset_png" src="images/reset.png" width="26" height="26" title="resetear el contenido" alt="reset"></div>
-      <div class="action_button" id="result_view"><img id="result_view_png" src="images/glyphicons-87-display.png" width="26" height="26" title="Ver sólo resultado" alt="Resultado"></div>
-      <div class="action_button" id="hybrid_view"><img id="hybrid_view_png" src="images/glyphicons-489-multiple-displays.png" width="26" height="26" title="Ver edición y resultado a la vez" alt="Híbrido"></div>
-      <div class="action_button" id="edit_view"><img id="edit_view_png" src="images/glyphicons-151-edit.png" width="26" height="26" title="Ver modo edición únicamente" alt="Edición"></div>
-      <div class="action_button" id="info_sign"><img id="info_sign_png" src="images/info_sign.png" width="26" height="26" title="Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima." alt="Ayuda"></div>
+
+      <div class="action_button" id="result_view" data-toggle="tooltip" data-placement="bottom" title="Ver resultado">
+        <!--<img id="result_view_png" src="images/glyphicons-87-display.png" width="26" height="26" title="Ver sólo resultado" alt="Resultado">-->
+        <i class="fa fa-desktop"></i>
+      </div>
+      <div class="action_button" id="hybrid_view" data-toggle="tooltip" data-placement="bottom" title="Vista híbrida">
+        <!--<img id="hybrid_view_png" src="images/glyphicons-489-multiple-displays.png" width="26" height="26" title="Ver edición y resultado a la vez" alt="Híbrido">-->
+        <i class="fa fa-desktop"></i> + <i class="fa fa-indent"></i>
+      </div>
+      <div class="action_button separador" id="edit_view" data-toggle="tooltip" data-placement="bottom" title="Ver código">
+        <!--<img id="edit_view_png" src="images/glyphicons-151-edit.png" width="26" height="26" title="Ver modo edición únicamente" alt="Edición">-->
+        <i class="fa fa-indent"></i>
+      </div>
+      <div class="action_button separador" id="reset" data-toggle="tooltip" data-placement="bottom" title="Restablecer código">
+        <!--<img id="reset_png" src="images/reset.png" width="26" height="26" title="resetear el contenido" alt="reset">-->
+        <i class="fa fa-refresh"></i>
+      </div>
+      <div class="action_button" id="info_sign" data-toggle="tooltip" data-placement="bottom" title="Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima.">
+        <i class="fa fa-info-circle"></i>
+        <!--<img id="info_sign_png" src="images/info_sign.png" width="26" height="26" title="Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima." alt="Ayuda">-->
+      </div>
     </header>
 
     <nav id="navtop">
@@ -73,5 +112,8 @@
 	$(document).ready(function(){
 		HTMLPlayer.CORE.init({});
 	});
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
 </script>
 </html>

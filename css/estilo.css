@@ -59,13 +59,10 @@
 	#page-wrap #navtop ul#menutop {
 		list-style-type: none;
 		margin: 0px;
-		padding-top: 0px;
-		padding-right: 0px;
-		padding-bottom: 0px;
-		padding-left: 0.5em;
+		padding: 0;
 		width: 30%;
 		position: absolute;
-		left: 51px;
+
 		top: 0px;
 		display: none;
 		z-index: 1000;
@@ -83,6 +80,7 @@
 		border-bottom-width: 1px;
 		border-bottom-style: solid;
 		border-bottom-color: #FFF;
+
 	}
 	#page-wrap #navtop ul li a:hover {
 		color: #4C4C4C;
@@ -191,9 +189,18 @@
 	.caja_visor #texto_resultado{
 	margin: 2% 0 3% 2%;
 	}
+	#page-wrap #navtop ul {
+		padding: 0;
+		margin: 0 0 5px 0;
+		height: 35px;
+	}
 	#page-wrap #navtop ul li {
 		display: inline;
 	}
+  #page-wrap #navtop ul li .moduleactive{
+  	background-color: #4dbcc9;
+  }
+
 	#page-wrap #navtop ul li a {
 		display: block;
 		float: left;
@@ -202,8 +209,7 @@
 		color: #FFF;
 		text-decoration: none;
 		margin-right: 0.4em;
-		-webkit-border-radius: 5px 5px 0px 0px;
-		border-radius: 5px 5px 0px 0px;
+
 		font-size: small;
 	}
 	#page-wrap #navtop ul li a:hover {
@@ -254,6 +260,7 @@ html{
 body{
 	font-family: fira;
 	height: 96%;
+	background-color: #ddd !important;
 }
 #page-wrap {
 	width: 100%;
@@ -263,7 +270,9 @@ body{
 #botonera {
   width: 100%;
   min-height: 40px;
-  background: #ccc;
+  border-bottom: 1px solid gray;
+  /*background: #ccc;*/
+
 }
 
 .main p{
@@ -276,12 +285,13 @@ body{
 	border-radius: 5px;
 }
 .action_button {
-	height: 26px;
-	width: 26px;
+	height: 40px;
+
 	float: right;
-	background-color: #FFF;
-	margin: 0.2em;
-  cursor: pointer;
+
+	padding: 9px 13px;
+	margin: 0;
+	cursor: pointer;
 }
 .caja_visor #cerrar {
 	height: 26px;
@@ -369,4 +379,19 @@ body{
 
 .selected{
   background: red;
+  color: white;
 }
+.separador{
+	border-left: 1px solid gray;
+}
+
+select{
+	margin: 8px !important;
+}
+
+
+
+
+
+
+
