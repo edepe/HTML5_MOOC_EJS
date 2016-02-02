@@ -197,10 +197,10 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
 
     $("#hybrid_view").on("click", function(){
-      $("#ceditor").show();
-      $("#cvisor").show();
       $('#ceditor').css("width",editor_width+14); //añado 14px porque lo guardé sin el padding
       $('#cvisor').css("width",visor_width+14);
+      $("#ceditor").show();
+      $("#cvisor").show();
       $(".action_button").removeClass("selected");
       $("#hybrid_view").addClass("selected");
       ultima_vista = "hibrida";
