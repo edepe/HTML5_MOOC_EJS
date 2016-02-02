@@ -182,14 +182,14 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         }
     });
 
-    $("#edit_view").on("click", function(){
-        $("#ceditor").show();
-        $("#cvisor").hide();
+    $("#edit_view").on("click", function(){        
         //salvo anchos de visor y editor, sólo cuando vengo de hibrida, porque si no es 100%
         if(ultima_vista==="hibrida"){
           visor_width = $("#cvisor").width();
           editor_width = $('#ceditor').width();
         }
+        $("#ceditor").show();
+        $("#cvisor").hide();
         $('#ceditor').css("width","98%");
         $(".action_button").removeClass("selected");
         $("#edit_view").addClass("selected");
@@ -207,12 +207,12 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
 
     $("#result_view").on("click", function(){
-      $("#cvisor").show();
-      $("#ceditor").hide();
       if(ultima_vista==="hibrida"){
         visor_width = $("#cvisor").width();
         editor_width = $('#ceditor').width();
       }
+      $("#cvisor").show();
+      $("#ceditor").hide();
       $('#cvisor').css("width","98%");
       $(".action_button").removeClass("selected");
       $("#result_view").addClass("selected");
@@ -222,10 +222,10 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     $("#cvisor").resizable({ handles: 'w' });
     $('#cvisor').resize(function(){
        $('#ceditor').width($("#parent").width()-$("#cvisor").width() - 40);
-       console.log("PARENT: " + $("#parent").width());
-       console.log("EDITOR: " + $('#ceditor').width());
-       console.log("VISOR: " + $("#cvisor").width());
-       console.log("SUMA: " + ($("#cvisor").width()+$('#ceditor').width()));
+       //console.log("PARENT: " + $("#parent").width());
+       //console.log("EDITOR: " + $('#ceditor').width());
+       //console.log("VISOR: " + $("#cvisor").width());
+       //console.log("SUMA: " + ($("#cvisor").width()+$('#ceditor').width()));
     });
   };
 
