@@ -21,6 +21,10 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   var indicemodulo;
   var indicefolder;
   var indicetab;
+  var visor_width;
+  var editor_width;
+  var ultima_vista = "hibrida";
+
 
   var init = function(options){
     editor = $("#editor");
@@ -46,6 +50,8 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         $('#modulos').append(options);
         _inicializaEnventos();
         _initACEEditor();
+        visor_width = $("#cvisor").width();
+        editor_width = $('#ceditor').width();
         _loadModule(indicemodulo, indicefolder, indicetab);
     });
   };
@@ -107,14 +113,9 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     _detectaFeaturesInicializaEventos();
 
     $( window ).resize(function() {
-    	 w=window.innerWidth;
-    	 if (w<600){
-        	$('.caja_visor').hide();
-          $("#menu").hide();
-      } else {
-          $('.caja_visor').show();
-          $("#menu").show();
-    	}
+    	 w=window.innerWidth;    	 
+      $('.caja_visor').show();
+      $("#menu").show();    	
     });
 
     //cuando cambia el selector de modulos
@@ -152,11 +153,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     $("#actualizar").on("click", function(){
       _ejecutar();
   	  var micontenedor = document.getElementById('cvisor');
-    	if (micontenedor.style.display == "block" && w<600) {
-        micontenedor.style.display = "none";
-      } else{
-    	  micontenedor.style.display = "block"
-    	}
+    	micontenedor.style.display = "block";    	
     });
 
     $(".caja_visor #cerrar").on("click", function(){
@@ -188,23 +185,38 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     $("#edit_view").on("click", function(){
         $("#ceditor").show();
         $("#cvisor").hide();
-
+        //salvo anchos de visor y editor, sólo cuando vengo de hibrida, porque si no es 100%
+        if(ultima_vista==="hibrida"){
+          visor_width = $("#cvisor").width();
+          editor_width = $('#ceditor').width();
+        }
+        $('#ceditor').css("width","98%");
         $(".action_button").removeClass("selected");
-        $("#result_view").addClass("selected");
+        $("#edit_view").addClass("selected");
+        ultima_vista = "edit";
     });
 
     $("#hybrid_view").on("click", function(){
       $("#ceditor").show();
       $("#cvisor").show();
+      $('#ceditor').css("width",editor_width+14); //añado 14px porque lo guardé sin el padding
+      $('#cvisor').css("width",visor_width+14);
       $(".action_button").removeClass("selected");
       $("#hybrid_view").addClass("selected");
+      ultima_vista = "hibrida";
     });
 
     $("#result_view").on("click", function(){
       $("#cvisor").show();
       $("#ceditor").hide();
+      if(ultima_vista==="hibrida"){
+        visor_width = $("#cvisor").width();
+        editor_width = $('#ceditor').width();
+      }
+      $('#cvisor').css("width","98%");
       $(".action_button").removeClass("selected");
-      $("#edit_view").addClass("selected");
+      $("#result_view").addClass("selected");
+      ultima_vista = "result";
     });
 
     $("#cvisor").resizable({ handles: 'w' });
@@ -229,7 +241,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
       var lis = '';
       var extraclass;
       for (var i=0;i < hijos.length;i++){
-         extraclass = indicefolder==i ? "activetab":"";
+         extraclass = indicefolder==i ? "moduleactive":"";
          lis += '<li><a href="javascript:void(0);" title="'+hijos[i].name+'" pos="'+i+'" class="moduletab '+extraclass+'">'+hijos[i].name+'</a></li>';
       }
       $("#menutop").show();

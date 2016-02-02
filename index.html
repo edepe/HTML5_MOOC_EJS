@@ -57,7 +57,7 @@
         <!--<img id="result_view_png" src="images/glyphicons-87-display.png" width="26" height="26" title="Ver sólo resultado" alt="Resultado">-->
         <i class="fa fa-desktop"></i>
       </div>
-      <div class="action_button" id="hybrid_view" data-toggle="tooltip" data-placement="bottom" title="Vista híbrida">
+      <div class="action_button selected" id="hybrid_view" data-toggle="tooltip" data-placement="bottom" title="Vista híbrida">
         <!--<img id="hybrid_view_png" src="images/glyphicons-489-multiple-displays.png" width="26" height="26" title="Ver edición y resultado a la vez" alt="Híbrido">-->
         <i class="fa fa-desktop"></i> + <i class="fa fa-indent"></i>
       </div>
@@ -69,7 +69,7 @@
         <!--<img id="reset_png" src="images/reset.png" width="26" height="26" title="resetear el contenido" alt="reset">-->
         <i class="fa fa-refresh"></i>
       </div>
-      <div class="action_button" id="info_sign" data-toggle="tooltip" data-placement="bottom" title="Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima.">
+      <div class="action_button" id="info_sign" data-toggle="tooltip" data-placement="bottom" title="Los ejemplos se pueden editar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, situado en la esquina superior derecha de esta webapp.">
         <i class="fa fa-info-circle"></i>
         <!--<img id="info_sign_png" src="images/info_sign.png" width="26" height="26" title="Los ejemplos se pueden cambiar y ejecutar (visualizar) con los cambios introducidos pulsando el botón play, que está justo encima." alt="Ayuda">-->
       </div>
@@ -93,19 +93,20 @@
         <div class="caja" id="ceditor">
           <span id="texto_ejemplo">Ejemplo:</span>
           <span id="titulo_ejemplo">Título</span>
-
           <div class="area">
-            <div id="editor"></div>
+            <div id="editor">              
             </div>
+          </div>
         </div>
 
         <div class="caja_visor" id="cvisor">
           <p id="texto_resultado">Resultado:</p>
-          <div id="cerrar"><img id="cerrar_png" src="images/cerrar.png" width="26" height="26" alt="cerrar"></div>
+          <div id="cerrar">
+            <img id="cerrar_png" src="images/cerrar.png" width="26" height="26" alt="cerrar"></div>
           <iframe id="iframe" class="" frameborder="0"></iframe>
         </div>
     </div>
-    <div class="clear"> </div>
+    <div class="clear"></div>
   </div>
 </body>
 <script type="text/javascript">
