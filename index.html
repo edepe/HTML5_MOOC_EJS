@@ -7,6 +7,7 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script type="text/javascript" src="js/FileSaver.js" ></script>
   <script type="text/javascript" src="js/HTMLPlayer.js"></script>
+  <script type="text/javascript" src="//vishub.org/apis/iframe_api.js"></script>
 
   <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/ace/mode-html.js" type="text/javascript" charset="utf-8"></script>
@@ -111,6 +112,7 @@
 </body>
 <script type="text/javascript">
 	$(document).ready(function(){
+    VISH.IframeAPI.init({wapp: true,tracking: true});
 		HTMLPlayer.CORE.init({});
 	});
   $(function () {
