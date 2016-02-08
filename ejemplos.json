@@ -762,53 +762,39 @@
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/mod_06/30-bootstrap/fonts",
-                        "name": "fonts",
-                        "title": "ejemplos/mod_06/30-bootstrap/fonts",
-                        "type": "folder",
-                        "children": []
-                    },
-                    {
-                        "path": "ejemplos/mod_06/30-bootstrap/js",
-                        "name": "js",
-                        "title": "ejemplos/mod_06/30-bootstrap/js",
-                        "type": "folder",
-                        "children": []
-                    },
-                    {
                         "path": "ejemplos/mod_06/30-bootstrap/menu1.html",
                         "name": "menu1.html",
-                        "title": "5",
+                        "title": "3",
                         "type": "file"
                     },
                     {
                         "path": "ejemplos/mod_06/30-bootstrap/menu2.html",
                         "name": "menu2.html",
-                        "title": "6",
+                        "title": "4",
                         "type": "file"
                     },
                     {
                         "path": "ejemplos/mod_06/30-bootstrap/menu3.html",
                         "name": "menu3.html",
-                        "title": "7",
+                        "title": "5",
                         "type": "file"
                     },
                     {
                         "path": "ejemplos/mod_06/30-bootstrap/pag.html",
                         "name": "pag.html",
-                        "title": "8",
+                        "title": "6",
                         "type": "file"
                     },
                     {
                         "path": "ejemplos/mod_06/30-bootstrap/pag_grid.html",
                         "name": "pag_grid.html",
-                        "title": "9",
+                        "title": "7",
                         "type": "file"
                     },
                     {
                         "path": "ejemplos/mod_06/30-bootstrap/pag_grid2.html",
                         "name": "pag_grid2.html",
-                        "title": "10",
+                        "title": "8",
                         "type": "file"
                     }
                 ]
@@ -832,24 +818,10 @@
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/mod_06/40-ej_bootstrap/fonts",
-                        "name": "fonts",
-                        "title": "ejemplos/mod_06/40-ej_bootstrap/fonts",
-                        "type": "folder",
-                        "children": []
-                    },
-                    {
                         "path": "ejemplos/mod_06/40-ej_bootstrap/index.html",
                         "name": "index.html",
-                        "title": "4",
+                        "title": "3",
                         "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/mod_06/40-ej_bootstrap/js",
-                        "name": "js",
-                        "title": "ejemplos/mod_06/40-ej_bootstrap/js",
-                        "type": "folder",
-                        "children": []
                     },
                     {
                         "path": "ejemplos/mod_06/40-ej_bootstrap/puzzle",
