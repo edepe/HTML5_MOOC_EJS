@@ -77,6 +77,9 @@
 		outline: none;
 		font-size: small;
 	}
+	#page-wrap #navtop ul li a i{
+		margin-right: 5px;
+	}
 	#page-wrap #navtop ul li a:hover {
 		color: #4C4C4C;
 		background-color: #FC0;

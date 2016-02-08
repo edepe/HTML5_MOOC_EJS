@@ -129,7 +129,11 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         var foldercontent = modulocargado.children[indicefolder];
         _loadSubTabs(foldercontent,0);
         $("nav a.moduletab").removeClass("moduleactive");
+        $("nav a.moduletab i").removeClass("fa-folder-open");
+        $("nav a.moduletab i").addClass("fa-folder");
         $(this).addClass("moduleactive");
+        $(this).find("i").removeClass("fa-folder");
+        $(this).find("i").addClass("fa-folder-open");
     });
 
     $(document).on("click", "nav a.tab", function(){
@@ -240,9 +244,11 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     if(hijos[0] && hijos[0].type==="folder"){
       var lis = '';
       var extraclass;
+      var folder;
       for (var i=0;i < hijos.length;i++){
          extraclass = indicefolder==i ? "moduleactive":"";
-         lis += '<li><a href="javascript:void(0);" title="'+hijos[i].name+'" pos="'+i+'" class="moduletab '+extraclass+'">'+hijos[i].name+'</a></li>';
+         folder = indicefolder==i ? '<i class="fa fa-folder-open"></i>':'<i class="fa fa-folder"></i>';
+         lis += '<li><a href="javascript:void(0);" title="'+hijos[i].name+'" pos="'+i+'" class="moduletab '+extraclass+'">'+folder + hijos[i].name+'</a></li>';
       }
       $("#menutop").show();
       $("#menutop").html(lis);
