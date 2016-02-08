@@ -1,54 +1,54 @@
 [
     {
-        "path": "ejemplos/modulo_01",
-        "name": "modulo_01",
-        "title": "ejemplos/modulo_01",
+        "path": "ejemplos/mod_01",
+        "name": "mod_01",
+        "title": "ejemplos/mod_01",
         "type": "folder",
         "children": [
             {
-                "path": "ejemplos/modulo_01/01_mi_primera_pagina",
+                "path": "ejemplos/mod_01/01_mi_primera_pagina",
                 "name": "01_mi_primera_pagina",
-                "title": "ejemplos/modulo_01/01_mi_primera_pagina",
+                "title": "ejemplos/mod_01/01_mi_primera_pagina",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/menu_flex_a.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/menu_flex_a.html",
                         "name": "menu_flex_a.html",
                         "title": "1",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/menu_flex_b.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/menu_flex_b.html",
                         "name": "menu_flex_b.html",
                         "title": "2",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/mi_primera_pagina0.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/mi_primera_pagina0.html",
                         "name": "mi_primera_pagina0.html",
                         "title": "3",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/mi_primera_pagina1.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/mi_primera_pagina1.html",
                         "name": "mi_primera_pagina1.html",
                         "title": "4",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/mi_primera_pagina2.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/mi_primera_pagina2.html",
                         "name": "mi_primera_pagina2.html",
                         "title": "5",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/mi_primera_pagina_con imagen.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/mi_primera_pagina_con imagen.html",
                         "name": "mi_primera_pagina_con imagen.html",
                         "title": "6",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/01_mi_primera_pagina/valores_defecto.html",
+                        "path": "ejemplos/mod_01/01_mi_primera_pagina/valores_defecto.html",
                         "name": "valores_defecto.html",
                         "title": "7",
                         "type": "file"
@@ -56,115 +56,115 @@
                 ]
             },
             {
-                "path": "ejemplos/modulo_01/02_Estructura_HTML",
+                "path": "ejemplos/mod_01/02_Estructura_HTML",
                 "name": "02_Estructura_HTML",
-                "title": "ejemplos/modulo_01/02_Estructura_HTML",
+                "title": "ejemplos/mod_01/02_Estructura_HTML",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_abbr.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_abbr.html",
                         "name": "02_abbr.html",
                         "title": "1",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_br.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_br.html",
                         "name": "02_br.html",
                         "title": "2",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_caracteres_especiales.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_caracteres_especiales.html",
                         "name": "02_caracteres_especiales.html",
                         "title": "3",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_cita.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_cita.html",
                         "name": "02_cita.html",
                         "title": "4",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_div01.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_div01.html",
                         "name": "02_div01.html",
                         "title": "5",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_div02.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_div02.html",
                         "name": "02_div02.html",
                         "title": "6",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_div03.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_div03.html",
                         "name": "02_div03.html",
                         "title": "7",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_div04.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_div04.html",
                         "name": "02_div04.html",
                         "title": "8",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_div05.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_div05.html",
                         "name": "02_div05.html",
                         "title": "9",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_html5.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_html5.html",
                         "name": "02_html5.html",
                         "title": "10",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_indices.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_indices.html",
                         "name": "02_indices.html",
                         "title": "11",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_listas.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_listas.html",
                         "name": "02_listas.html",
                         "title": "12",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_parrafo.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_parrafo.html",
                         "name": "02_parrafo.html",
                         "title": "13",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_parrafo_con estilos.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_parrafo_con estilos.html",
                         "name": "02_parrafo_con estilos.html",
                         "title": "14",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_parrafo_con estilos2.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_parrafo_con estilos2.html",
                         "name": "02_parrafo_con estilos2.html",
                         "title": "15",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_pre.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_pre.html",
                         "name": "02_pre.html",
                         "title": "16",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_tabla.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_tabla.html",
                         "name": "02_tabla.html",
                         "title": "17",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/02_Estructura_HTML/02_utf8.html",
+                        "path": "ejemplos/mod_01/02_Estructura_HTML/02_utf8.html",
                         "name": "02_utf8.html",
                         "title": "18",
                         "type": "file"
@@ -172,85 +172,85 @@
                 ]
             },
             {
-                "path": "ejemplos/modulo_01/03_herencia_CSS",
+                "path": "ejemplos/mod_01/03_herencia_CSS",
                 "name": "03_herencia_CSS",
-                "title": "ejemplos/modulo_01/03_herencia_CSS",
+                "title": "ejemplos/mod_01/03_herencia_CSS",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03 _clases.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03 _clases.html",
                         "name": "03 _clases.html",
                         "title": "1",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_arbol.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_arbol.html",
                         "name": "03_arbol.html",
                         "title": "2",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_arbol_ej.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_arbol_ej.html",
                         "name": "03_arbol_ej.html",
                         "title": "3",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_bloques_html5.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_bloques_html5.html",
                         "name": "03_bloques_html5.html",
                         "title": "4",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_prioridad.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_prioridad.html",
                         "name": "03_prioridad.html",
                         "title": "5",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_prioridad_h1.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_prioridad_h1.html",
                         "name": "03_prioridad_h1.html",
                         "title": "6",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores01.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores01.html",
                         "name": "03_selectores01.html",
                         "title": "7",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores02.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores02.html",
                         "name": "03_selectores02.html",
                         "title": "8",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores03.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores03.html",
                         "name": "03_selectores03.html",
                         "title": "9",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores04.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores04.html",
                         "name": "03_selectores04.html",
                         "title": "10",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores05.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores05.html",
                         "name": "03_selectores05.html",
                         "title": "11",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores06.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores06.html",
                         "name": "03_selectores06.html",
                         "title": "12",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_01/03_herencia_CSS/03_selectores07.html",
+                        "path": "ejemplos/mod_01/03_herencia_CSS/03_selectores07.html",
                         "name": "03_selectores07.html",
                         "title": "13",
                         "type": "file"
@@ -260,91 +260,91 @@
         ]
     },
     {
-        "path": "ejemplos/modulo_02",
-        "name": "modulo_02",
-        "title": "ejemplos/modulo_02",
+        "path": "ejemplos/mod_02",
+        "name": "mod_02",
+        "title": "ejemplos/mod_02",
         "type": "folder",
         "children": [
             {
-                "path": "ejemplos/modulo_02/01_Estructura_CSS",
+                "path": "ejemplos/mod_02/01_Estructura_CSS",
                 "name": "01_Estructura_CSS",
-                "title": "ejemplos/modulo_02/01_Estructura_CSS",
+                "title": "ejemplos/mod_02/01_Estructura_CSS",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div01.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div01.html",
                         "name": "04_div01.html",
                         "title": "1",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div02.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div02.html",
                         "name": "04_div02.html",
                         "title": "2",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div03.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div03.html",
                         "name": "04_div03.html",
                         "title": "3",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div04a.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div04a.html",
                         "name": "04_div04a.html",
                         "title": "4",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div04b.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div04b.html",
                         "name": "04_div04b.html",
                         "title": "5",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div07.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div07.html",
                         "name": "04_div07.html",
                         "title": "6",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div08.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div08.html",
                         "name": "04_div08.html",
                         "title": "7",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div09.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div09.html",
                         "name": "04_div09.html",
                         "title": "8",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div10.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div10.html",
                         "name": "04_div10.html",
                         "title": "9",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_div11.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_div11.html",
                         "name": "04_div11.html",
                         "title": "10",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_font_face.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_font_face.html",
                         "name": "04_font_face.html",
                         "title": "11",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_font_face2.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_font_face2.html",
                         "name": "04_font_face2.html",
                         "title": "12",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/01_Estructura_CSS/04_line_height.html",
+                        "path": "ejemplos/mod_02/01_Estructura_CSS/04_line_height.html",
                         "name": "04_line_height.html",
                         "title": "13",
                         "type": "file"
@@ -352,13 +352,13 @@
                 ]
             },
             {
-                "path": "ejemplos/modulo_02/02_video_audio_imagen",
+                "path": "ejemplos/mod_02/02_video_audio_imagen",
                 "name": "02_video_audio_imagen",
-                "title": "ejemplos/modulo_02/02_video_audio_imagen",
+                "title": "ejemplos/mod_02/02_video_audio_imagen",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/modulo_02/02_video_audio_imagen/picture_element.html",
+                        "path": "ejemplos/mod_02/02_video_audio_imagen/picture_element.html",
                         "name": "picture_element.html",
                         "title": "1",
                         "type": "file"
@@ -366,25 +366,25 @@
                 ]
             },
             {
-                "path": "ejemplos/modulo_02/03_Integracion_multimedia",
+                "path": "ejemplos/mod_02/03_Integracion_multimedia",
                 "name": "03_Integracion_multimedia",
-                "title": "ejemplos/modulo_02/03_Integracion_multimedia",
+                "title": "ejemplos/mod_02/03_Integracion_multimedia",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/modulo_02/03_Integracion_multimedia/01_video_webm.htm",
+                        "path": "ejemplos/mod_02/03_Integracion_multimedia/01_video_webm.htm",
                         "name": "01_video_webm.htm",
                         "title": "1",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/03_Integracion_multimedia/02_video_webm_mp4.htm",
+                        "path": "ejemplos/mod_02/03_Integracion_multimedia/02_video_webm_mp4.htm",
                         "name": "02_video_webm_mp4.htm",
                         "title": "2",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/modulo_02/03_Integracion_multimedia/03-galeria.htm",
+                        "path": "ejemplos/mod_02/03_Integracion_multimedia/03-galeria.htm",
                         "name": "03-galeria.htm",
                         "title": "3",
                         "type": "file"
@@ -394,326 +394,853 @@
         ]
     },
     {
-        "path": "ejemplos/modulo_03",
-        "name": "modulo_03",
-        "title": "ejemplos/modulo_03",
+        "path": "ejemplos/mod_03",
+        "name": "mod_03",
+        "title": "ejemplos/mod_03",
         "type": "folder",
         "children": [
             {
-                "path": "ejemplos/modulo_03/01-conversion.htm",
+                "path": "ejemplos/mod_03/01-conversion.htm",
                 "name": "01-conversion.htm",
                 "title": "1",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_03/05-function_1.htm",
+                "path": "ejemplos/mod_03/05-function_1.htm",
                 "name": "05-function_1.htm",
                 "title": "2",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_03/06-function_2.htm",
+                "path": "ejemplos/mod_03/06-function_2.htm",
                 "name": "06-function_2.htm",
                 "title": "3",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_03/10-date_fixed.htm",
+                "path": "ejemplos/mod_03/10-date_fixed.htm",
                 "name": "10-date_fixed.htm",
                 "title": "4",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_03/11-date.htm",
+                "path": "ejemplos/mod_03/11-date.htm",
                 "name": "11-date.htm",
                 "title": "5",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_03/12-date_var.htm",
+                "path": "ejemplos/mod_03/12-date_var.htm",
                 "name": "12-date_var.htm",
                 "title": "6",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_03/13-date_function.htm",
+                "path": "ejemplos/mod_03/13-date_function.htm",
                 "name": "13-date_function.htm",
                 "title": "7",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_03/20-bool.htm",
-                "name": "20-bool.htm",
-                "title": "8",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_03/21-if-else.htm",
-                "name": "21-if-else.htm",
-                "title": "9",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_03/22-if.htm",
-                "name": "22-if.htm",
-                "title": "10",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_03/25-Date_meth.htm",
-                "name": "25-Date_meth.htm",
-                "title": "11",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_03/26-date_saludo.htm",
-                "name": "26-date_saludo.htm",
-                "title": "12",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_03/31-ejercicio.htm",
-                "name": "31-ejercicio.htm",
-                "title": "13",
                 "type": "file"
             }
         ]
     },
     {
-        "path": "ejemplos/modulo_04",
-        "name": "modulo_04",
-        "title": "ejemplos/modulo_04",
+        "path": "ejemplos/mod_04",
+        "name": "mod_04",
+        "title": "ejemplos/mod_04",
         "type": "folder",
         "children": [
             {
-                "path": "ejemplos/modulo_04/00-bool.htm",
+                "path": "ejemplos/mod_04/00-bool.htm",
                 "name": "00-bool.htm",
                 "title": "1",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/01-if-else.htm",
+                "path": "ejemplos/mod_04/01-if-else.htm",
                 "name": "01-if-else.htm",
                 "title": "2",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/02-if.htm",
+                "path": "ejemplos/mod_04/02-if.htm",
                 "name": "02-if.htm",
                 "title": "3",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/05-Date_methods.htm",
+                "path": "ejemplos/mod_04/05-Date_methods.htm",
                 "name": "05-Date_methods.htm",
                 "title": "4",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/06-date_if_saludo.htm",
+                "path": "ejemplos/mod_04/06-date_if_saludo.htm",
                 "name": "06-date_if_saludo.htm",
                 "title": "5",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/10-string.htm",
+                "path": "ejemplos/mod_04/10-string.htm",
                 "name": "10-string.htm",
                 "title": "6",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/12-number.htm",
+                "path": "ejemplos/mod_04/12-number.htm",
                 "name": "12-number.htm",
                 "title": "7",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/13-parse.htm",
+                "path": "ejemplos/mod_04/13-parse.htm",
                 "name": "13-parse.htm",
                 "title": "8",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/15-boolean.htm",
-                "name": "15-boolean.htm",
+                "path": "ejemplos/mod_04/15-boolean_1.htm",
+                "name": "15-boolean_1.htm",
                 "title": "9",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/15-boolean_1.htm",
-                "name": "15-boolean_1.htm",
+                "path": "ejemplos/mod_04/15-boolean_2.htm",
+                "name": "15-boolean_2.htm",
                 "title": "10",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/15-boolean_2.htm",
-                "name": "15-boolean_2.htm",
+                "path": "ejemplos/mod_04/15-boolean_3.htm",
+                "name": "15-boolean_3.htm",
                 "title": "11",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/15-boolean_3.htm",
-                "name": "15-boolean_3.htm",
+                "path": "ejemplos/mod_04/20_event_html.htm",
+                "name": "20_event_html.htm",
                 "title": "12",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/20-event_html.htm",
-                "name": "20-event_html.htm",
+                "path": "ejemplos/mod_04/25-cuadrado.htm",
+                "name": "25-cuadrado.htm",
                 "title": "13",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/25-cuadrado.htm",
-                "name": "25-cuadrado.htm",
+                "path": "ejemplos/mod_04/26-cuadrado-inv.htm",
+                "name": "26-cuadrado-inv.htm",
                 "title": "14",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_04/26-cuadrado-inv.htm",
-                "name": "26-cuadrado-inv.htm",
-                "title": "15",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_04/28-calculadora.htm",
+                "path": "ejemplos/mod_04/28-calculadora.htm",
                 "name": "28-calculadora.htm",
-                "title": "16",
-                "type": "file"
-            },
-            {
-                "path": "ejemplos/modulo_04/29-calculadora_n.htm",
-                "name": "29-calculadora_n.htm",
-                "title": "17",
+                "title": "15",
                 "type": "file"
             }
         ]
     },
     {
-        "path": "ejemplos/modulo_05",
-        "name": "modulo_05",
-        "title": "ejemplos/modulo_05",
+        "path": "ejemplos/mod_05",
+        "name": "mod_05",
+        "title": "ejemplos/mod_05",
         "type": "folder",
         "children": [
             {
-                "path": "ejemplos/modulo_05/01-pot_2.htm",
+                "path": "ejemplos/mod_05/01-pot_2.htm",
                 "name": "01-pot_2.htm",
                 "title": "1",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/05-sumatorio_while.htm",
+                "path": "ejemplos/mod_05/05-sumatorio_while.htm",
                 "name": "05-sumatorio_while.htm",
                 "title": "2",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/06-sumatorio_while_compr.htm",
+                "path": "ejemplos/mod_05/06-sumatorio_while_compr.htm",
                 "name": "06-sumatorio_while_compr.htm",
                 "title": "3",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/08-sumatorio_for.htm",
+                "path": "ejemplos/mod_05/08-sumatorio_for.htm",
                 "name": "08-sumatorio_for.htm",
                 "title": "4",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/09-sumatorio_for_compr.htm",
+                "path": "ejemplos/mod_05/09-sumatorio_for_compr.htm",
                 "name": "09-sumatorio_for_compr.htm",
                 "title": "5",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/10-function.htm",
+                "path": "ejemplos/mod_05/10-function.htm",
                 "name": "10-function.htm",
                 "title": "6",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/15-veces.htm",
-                "name": "15-veces.htm",
+                "path": "ejemplos/mod_05/15-veces_forEach.htm",
+                "name": "15-veces_forEach.htm",
                 "title": "7",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/20-ambito_1.htm",
+                "path": "ejemplos/mod_05/20-ambito_1.htm",
                 "name": "20-ambito_1.htm",
                 "title": "8",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/21-ambito_2.htm",
+                "path": "ejemplos/mod_05/21-ambito_2.htm",
                 "name": "21-ambito_2.htm",
                 "title": "9",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/25-cierre_1.htm",
+                "path": "ejemplos/mod_05/25-cierre_1.htm",
                 "name": "25-cierre_1.htm",
                 "title": "10",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/26-cierre_2.htm",
+                "path": "ejemplos/mod_05/26-cierre_2.htm",
                 "name": "26-cierre_2.htm",
                 "title": "11",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/35-date-jquery.htm",
+                "path": "ejemplos/mod_05/35-date-jquery.htm",
                 "name": "35-date-jquery.htm",
                 "title": "12",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/36-date_jquery_ready.htm",
+                "path": "ejemplos/mod_05/36-date_jquery_ready.htm",
                 "name": "36-date_jquery_ready.htm",
                 "title": "13",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/37-date_jquery_cdn.htm",
+                "path": "ejemplos/mod_05/37-date_jquery_cdn.htm",
                 "name": "37-date_jquery_cdn.htm",
                 "title": "14",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/40-event_html.htm",
-                "name": "40-event_html.htm",
+                "path": "ejemplos/mod_05/40_event_html.htm",
+                "name": "40_event_html.htm",
                 "title": "15",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/41-event_event_listener.htm",
-                "name": "41-event_event_listener.htm",
+                "path": "ejemplos/mod_05/41-event_listener.htm",
+                "name": "41-event_listener.htm",
                 "title": "16",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/42-event_onload.htm",
-                "name": "42-event_onload.htm",
+                "path": "ejemplos/mod_05/42-event_propiedad.htm",
+                "name": "42-event_propiedad.htm",
                 "title": "17",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/43_event_jQuery.htm",
+                "path": "ejemplos/mod_05/43_event_jQuery.htm",
                 "name": "43_event_jQuery.htm",
                 "title": "18",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/45-calculadora_jquery.htm",
+                "path": "ejemplos/mod_05/45-calculadora_jquery.htm",
                 "name": "45-calculadora_jquery.htm",
                 "title": "19",
                 "type": "file"
             },
             {
-                "path": "ejemplos/modulo_05/50-clock_jQuery.htm",
+                "path": "ejemplos/mod_05/50-clock_jQuery.htm",
                 "name": "50-clock_jQuery.htm",
                 "title": "20",
                 "type": "file"
+            }
+        ]
+    },
+    {
+        "path": "ejemplos/mod_06",
+        "name": "mod_06",
+        "title": "ejemplos/mod_06",
+        "type": "folder",
+        "children": [
+            {
+                "path": "ejemplos/mod_06/01-puzzle",
+                "name": "01-puzzle",
+                "title": "ejemplos/mod_06/01-puzzle",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/01-puzzle/puzzle.html",
+                        "name": "puzzle.html",
+                        "title": "1",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_06/10-puzzle_touch_punch",
+                "name": "10-puzzle_touch_punch",
+                "title": "ejemplos/mod_06/10-puzzle_touch_punch",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/10-puzzle_touch_punch/puzzle_touch_punch.html",
+                        "name": "puzzle_touch_punch.html",
+                        "title": "1",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_06/15-event",
+                "name": "15-event",
+                "title": "ejemplos/mod_06/15-event",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/15-event/15-event_jQuery_mobile.htm",
+                        "name": "15-event_jQuery_mobile.htm",
+                        "title": "1",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_06/20-tangram",
+                "name": "20-tangram",
+                "title": "ejemplos/mod_06/20-tangram",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/20-tangram/tangram_funcion.html",
+                        "name": "tangram_funcion.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/20-tangram/tangram_propiedad.html",
+                        "name": "tangram_propiedad.html",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/20-tangram/tangram_random.html",
+                        "name": "tangram_random.html",
+                        "title": "3",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_06/30-bootstrap",
+                "name": "30-bootstrap",
+                "title": "ejemplos/mod_06/30-bootstrap",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/botones.html",
+                        "name": "botones.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/css",
+                        "name": "css",
+                        "title": "ejemplos/mod_06/30-bootstrap/css",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/ejemplo_img.html",
+                        "name": "ejemplo_img.html",
+                        "title": "3",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/fonts",
+                        "name": "fonts",
+                        "title": "ejemplos/mod_06/30-bootstrap/fonts",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/js",
+                        "name": "js",
+                        "title": "ejemplos/mod_06/30-bootstrap/js",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/menu1.html",
+                        "name": "menu1.html",
+                        "title": "6",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/menu2.html",
+                        "name": "menu2.html",
+                        "title": "7",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/menu3.html",
+                        "name": "menu3.html",
+                        "title": "8",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/pag.html",
+                        "name": "pag.html",
+                        "title": "9",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/pag_grid.html",
+                        "name": "pag_grid.html",
+                        "title": "10",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/30-bootstrap/pag_grid2.html",
+                        "name": "pag_grid2.html",
+                        "title": "11",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_06/40-ej_bootstrap",
+                "name": "40-ej_bootstrap",
+                "title": "ejemplos/mod_06/40-ej_bootstrap",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/css",
+                        "name": "css",
+                        "title": "ejemplos/mod_06/40-ej_bootstrap/css",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/ejercicio_puzzle.html",
+                        "name": "ejercicio_puzzle.html",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/ejercicio_puzzle_compr.html",
+                        "name": "ejercicio_puzzle_compr.html",
+                        "title": "3",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/fonts",
+                        "name": "fonts",
+                        "title": "ejemplos/mod_06/40-ej_bootstrap/fonts",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/index.html",
+                        "name": "index.html",
+                        "title": "5",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/js",
+                        "name": "js",
+                        "title": "ejemplos/mod_06/40-ej_bootstrap/js",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_06/40-ej_bootstrap/puzzle",
+                        "name": "puzzle",
+                        "title": "ejemplos/mod_06/40-ej_bootstrap/puzzle",
+                        "type": "folder",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "ejemplos/mod_07",
+        "name": "mod_07",
+        "title": "ejemplos/mod_07",
+        "type": "folder",
+        "children": [
+            {
+                "path": "ejemplos/mod_07/00-arrays",
+                "name": "00-arrays",
+                "title": "ejemplos/mod_07/00-arrays",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_07/00-arrays/00-editar_frases_jQuery_for.html",
+                        "name": "00-editar_frases_jQuery_for.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/00-arrays/00-editar_frases_jQuery_forEach.html",
+                        "name": "00-editar_frases_jQuery_forEach.html",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/00-arrays/01-editar_frases.html",
+                        "name": "01-editar_frases.html",
+                        "title": "3",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/00-arrays/10-object_avatar.htm",
+                        "name": "10-object_avatar.htm",
+                        "title": "4",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_07/11-objects",
+                "name": "11-objects",
+                "title": "ejemplos/mod_07/11-objects",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_07/11-objects/12-object_dynamic_prop.htm",
+                        "name": "12-object_dynamic_prop.htm",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/11-objects/13-object_for-in.htm",
+                        "name": "13-object_for-in.htm",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/11-objects/14-window_inspect_jQuery.htm",
+                        "name": "14-window_inspect_jQuery.htm",
+                        "title": "3",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/11-objects/15-window_inspect.htm",
+                        "name": "15-window_inspect.htm",
+                        "title": "4",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_07/40_citas_url",
+                "name": "40_citas_url",
+                "title": "ejemplos/mod_07/40_citas_url",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_07/40_citas_url/citas.html",
+                        "name": "citas.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/40_citas_url/citas_jQuery.html",
+                        "name": "citas_jQuery.html",
+                        "title": "2",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_07/41-citas_foto",
+                "name": "41-citas_foto",
+                "title": "ejemplos/mod_07/41-citas_foto",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_07/41-citas_foto/citas.html",
+                        "name": "citas.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/41-citas_foto/citas_jQuery.html",
+                        "name": "citas_jQuery.html",
+                        "title": "2",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_07/45-citas_carrusel",
+                "name": "45-citas_carrusel",
+                "title": "ejemplos/mod_07/45-citas_carrusel",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_07/45-citas_carrusel/citas_carrusel.html",
+                        "name": "citas_carrusel.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/45-citas_carrusel/citas_carrusel_jQuery.html",
+                        "name": "citas_carrusel_jQuery.html",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/45-citas_carrusel/css",
+                        "name": "css",
+                        "title": "ejemplos/mod_07/45-citas_carrusel/css",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_07/45-citas_carrusel/javascript",
+                        "name": "javascript",
+                        "title": "ejemplos/mod_07/45-citas_carrusel/javascript",
+                        "type": "folder",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_07/50-citas_editar",
+                "name": "50-citas_editar",
+                "title": "ejemplos/mod_07/50-citas_editar",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_07/50-citas_editar/citas_slide_editar.html",
+                        "name": "citas_slide_editar.html",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/50-citas_editar/citas_slide_editar_jQuery.html",
+                        "name": "citas_slide_editar_jQuery.html",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_07/50-citas_editar/css",
+                        "name": "css",
+                        "title": "ejemplos/mod_07/50-citas_editar/css",
+                        "type": "folder",
+                        "children": []
+                    },
+                    {
+                        "path": "ejemplos/mod_07/50-citas_editar/javascript",
+                        "name": "javascript",
+                        "title": "ejemplos/mod_07/50-citas_editar/javascript",
+                        "type": "folder",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "path": "ejemplos/mod_08",
+        "name": "mod_08",
+        "title": "ejemplos/mod_08",
+        "type": "folder",
+        "children": [
+            {
+                "path": "ejemplos/mod_08/01-cronometro_start_stop.htm",
+                "name": "01-cronometro_start_stop.htm",
+                "title": "1",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_08/10-visitCount.html",
+                "name": "10-visitCount.html",
+                "title": "2",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_08/11-cronometro_localStorage.htm",
+                "name": "11-cronometro_localStorage.htm",
+                "title": "3",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_08/15-NotePad.html",
+                "name": "15-NotePad.html",
+                "title": "4",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_08/20-iframe_Pixie.htm",
+                "name": "20-iframe_Pixie.htm",
+                "title": "5",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_08/21-for_iframe.htm",
+                "name": "21-for_iframe.htm",
+                "title": "6",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_08/25-for_iframe_localStorage.htm",
+                "name": "25-for_iframe_localStorage.htm",
+                "title": "7",
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "path": "ejemplos/mod_09",
+        "name": "mod_09",
+        "title": "ejemplos/mod_09",
+        "type": "folder",
+        "children": [
+            {
+                "path": "ejemplos/mod_09/00-geolocation.html",
+                "name": "00-geolocation.html",
+                "title": "1",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/01-geolocation2.html",
+                "name": "01-geolocation2.html",
+                "title": "2",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/05-geo_marker.html",
+                "name": "05-geo_marker.html",
+                "title": "3",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/06-geo_routes.html",
+                "name": "06-geo_routes.html",
+                "title": "4",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/07-geo_routes_ignacio.html",
+                "name": "07-geo_routes_ignacio.html",
+                "title": "5",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/21-image_adjust_svg_zepto.htm",
+                "name": "21-image_adjust_svg_zepto.htm",
+                "title": "6",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/22-image_adjust_svg_touch.htm",
+                "name": "22-image_adjust_svg_touch.htm",
+                "title": "7",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/25-clock_svg.htm",
+                "name": "25-clock_svg.htm",
+                "title": "8",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/26-clock_moving_svg.htm",
+                "name": "26-clock_moving_svg.htm",
+                "title": "9",
+                "type": "file"
+            },
+            {
+                "path": "ejemplos/mod_09/27-clock_CSS.htm",
+                "name": "27-clock_CSS.htm",
+                "title": "10",
+                "type": "file"
+            }
+        ]
+    },
+    {
+        "path": "ejemplos/mod_10",
+        "name": "mod_10",
+        "title": "ejemplos/mod_10",
+        "type": "folder",
+        "children": [
+            {
+                "path": "ejemplos/mod_10/T36-Cronometro",
+                "name": "T36-Cronometro",
+                "title": "ejemplos/mod_10/T36-Cronometro",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_10/T36-Cronometro/index.html",
+                        "name": "index.html",
+                        "title": "1",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_10/T37-CronometroMovil",
+                "name": "T37-CronometroMovil",
+                "title": "ejemplos/mod_10/T37-CronometroMovil",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_10/T37-CronometroMovil/index.html",
+                        "name": "index.html",
+                        "title": "1",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_10/T40-hosted",
+                "name": "T40-hosted",
+                "title": "ejemplos/mod_10/T40-hosted",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_10/T40-hosted/clock.htm",
+                        "name": "clock.htm",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_10/T40-hosted/install.htm",
+                        "name": "install.htm",
+                        "title": "2",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
+                "path": "ejemplos/mod_10/T40-packed",
+                "name": "T40-packed",
+                "title": "ejemplos/mod_10/T40-packed",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_10/T40-packed/index.html",
+                        "name": "index.html",
+                        "title": "1",
+                        "type": "file"
+                    }
+                ]
             }
         ]
     }

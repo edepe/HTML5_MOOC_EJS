@@ -1,0 +1,43 @@
+
+<!doctype html> <html> <head><meta charset="utf-8"/> 
+<script type="text/javascript" src="jquery-2.1.4.min.js" ></script>
+<script>
+var vista, frase_nueva;
+
+var frases = [ 
+  "Todo tiene belleza pero no todo el mundo la puede ver. Confucio.",
+  "Si dudas de ti mismo, estás vencido de antemano. Henrik Ibsen.",
+  "El silencio del envidioso está lleno de ruidos. Khalil Gibran.",
+  "La crítica es la fuerza del impotente. Alphonse de Lamartine."
+]
+
+$(function (){
+  vista = $("#vista");
+  frase_nueva = $("#frase_nueva");
+  generar_vista();
+
+  $("#b1").on("click", function() {
+    frases.push(frase_nueva.val()); 
+    generar_vista();
+  });
+});
+
+function generar_vista(){
+  vista.html("");  
+  frases.forEach(function(elem,i){
+    vista.append("<p>"+frases[i]+"<button onclick='borrar("+i+")'>"+"Borrar</button></p>");
+  });
+};
+
+function borrar(i){ frases.splice(i,1); generar_vista(); }
+
+</script>
+</head> <body> 
+  <h3>Citas Famosas</h3>
+
+  <div id="vista"> </div>
+
+  Frase: <input type="text" id="frase_nueva" />
+  <button id="b1" > Añadir </button>
+</body> </html>
+

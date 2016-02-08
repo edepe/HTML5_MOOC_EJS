@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>CITAS</title> 
+  <link rel="stylesheet" type="text/css" href="css/citas_slide.css" />
+
+<script type="text/javascript" src="javascript/galeria.js" ></script>
+<script>
+var persona, frase, foto, selectores, frase_actual=0, t;
+
+function inic(){
+  for (var j = 0; j < galeria.length; j++) {
+    document.getElementById("selector").innerHTML +=
+        "<li><a onClick='select("+j+")' class='off'></a></li>";
+  }
+  persona = document.getElementById("persona");
+  frase = document.getElementById("frase");
+  foto = document.getElementById("foto");
+  selectores = document.querySelectorAll("nav a");
+
+  select(frase_actual);
+}
+
+function select(frase_nueva){
+  selectores[frase_actual].className = "off";
+  selectores[frase_nueva].className = "on";
+
+  persona.innerHTML = galeria[frase_nueva].persona;
+  frase.innerHTML =   galeria[frase_nueva].frase;
+  foto.src =          galeria[frase_nueva].foto;
+  
+  persona_d.innerHTML = galeria[frase_nueva].persona;
+  frase_d.innerHTML =   galeria[frase_nueva].frase;
+  foto_d.innerHTML =    galeria[frase_nueva].foto;
+
+  clearTimeout(t);
+  t = setTimeout( function(){select((frase_actual + 1) % galeria.length);}, 2000);
+  frase_actual = frase_nueva;
+}
+function mostrar(){	
+	clearTimeout(t);
+	document.getElementById("datos").style.display = "block";
+	}
+</script>
+</head>
+
+<body onload="inic()">
+<div class="contenido">
+  <nav> 
+    <ul id="selector"></ul>
+  </nav>
+  <section id="caja">
+    <img id="foto" alt="" />
+    <div class="textos">
+      <p id="frase"></p>
+      <p id="persona"></p>
+    </div>
+  </section>
+  <div class="editar" onClick="mostrar()"> 
+  <img src="images/carat-d-white.svg" alt=""/> 
+  </div>
+  <section id="datos">
+  <div contentEditable="true" id="persona_d"></div>
+  <div contentEditable="true" id="frase_d"></div>
+  <div contentEditable="true" id="foto_d"></div> 
+  <div id="botones">
+  <ul>
+  <li><img src="images/edit-black.svg" alt=""/></li>
+  <li><img src="images/plus-black.svg" alt=""/></li>
+  <li><img src="images/delete-black.svg" alt=""/></li>
+  </ul>
+  </div>
+  </section>
+</div>
+</body>
+</html>
+

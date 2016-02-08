@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo typeof</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<pre>
+var pelicula = { 
+    titulo:'E.T.',  
+    director:'S. Spielberg',
+
+     resumen:function (){
+          return "El director de " + this.titulo + " es " + this.director;
+     }
+}
+
+<script type="text/javascript">
+
+var pelicula = { 
+    titulo:'E.T.',  
+    director:'S. Spielberg',
+
+     resumen:function (){
+          return "El director de " + this.titulo + " es " + this.director;
+     }
+}
+
+document.writeln(" pelicula.titulo    => " + pelicula.titulo);
+document.writeln(" pelicula['titulo'] => " + pelicula['titulo']);
+document.writeln(" pelicula.director  => " + pelicula.director);
+document.writeln(" pelicula.resumen() => " + pelicula.resumen());
+</script>
+</pre>
+</body>
+</html>

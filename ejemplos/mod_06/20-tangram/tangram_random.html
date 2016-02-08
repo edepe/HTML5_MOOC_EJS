@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<script src="jquery-2.1.4.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.touch-punch.min.js"></script>
+<script>
+$(document).ready(function() {
+
+$(window).load(function() {
+	cargar();
+});
+function cargar() {	
+var i = Math.floor(Math.random()*6);
+var j = Math.floor(Math.random()*11);	
+$("#foto").css({
+		'top': -j*118+'px',
+		'left': -i*128+'px'
+});
+}
+			
+$(".draggable").draggable({ stack: "img" });
+
+var angle = 0
+$("img").click(rotar)
+$( "img" ).bind( "tap", rotar );
+
+function rotar() {
+ 	angle += 45
+	$(this).css({
+          'transform': 'rotate('+angle+'deg)'
+     });  
+};
+
+});         
+</script>
+<head>
+<title> TANGRAM </title>
+<style type="text/css">
+body, html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+#caja {
+	position: absolute;
+	left:5%;
+	bottom:5%;
+	width: 135px;
+	height: 135px;
+	overflow: hidden;
+	border: 1px solid #000000;
+}
+#foto{
+	position:absolute;
+	top:0;
+	left:0;
+}
+h1 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 1em;
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #000000;
+}
+</style>
+</head>
+<body>
+<h1>TANGRAM</h1>
+<img src="tangram1.svg" alt=" " class="draggable"> 
+<img src="tangram2.svg" alt=" " class="draggable">
+<img src="tangram3.svg" alt=" " class="draggable">
+<img src="tangram4.svg" alt=" " class="draggable">
+<img src="tangram5.svg" alt=" " class="draggable">
+<img src="tangram6.svg" alt=" " class="draggable">
+<img src="tangram7.svg" alt=" " class="draggable">
+
+<div id="caja" ><img id="foto" src="soluciones.jpg" alt=""/></div>
+
+</body>
+</html>

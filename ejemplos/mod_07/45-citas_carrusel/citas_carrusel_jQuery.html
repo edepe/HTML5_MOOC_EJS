@@ -1,0 +1,48 @@
+
+<!doctype html><html>  <head><meta charset="utf-8"><title>CITAS</title> 
+<link rel="stylesheet" type="text/css" href="css/citas_slide.css" />
+
+<script type="text/javascript" src="javascript/jquery-2.1.4.min.js" ></script>
+<script type="text/javascript" src="javascript/galeria.js" ></script>
+<script>
+var t;
+
+$(function (){
+  galeria.forEach(function(elem,i) { 
+    $("ul#selector").append("<li><a onClick='select("+i+")'></a></li>");
+  });
+
+  select(0);
+});
+
+function select(i){
+  $("nav a")
+    .removeClass("on off")
+    .addClass(function(j){return(j===i)?"on":"off";});
+
+  $("#persona").html(galeria[i].persona);
+  $("#frase").html(galeria[i].frase);
+  $("#foto").attr("src", galeria[i].foto);
+
+  clearTimeout(t);
+  t = setTimeout( function(){select((i + 1) % galeria.length);}, 2000);
+}
+</script>
+</head>
+
+<body>
+<div class="contenido">
+  <nav> 
+    <ul id="selector"></ul>
+  </nav>
+  <section id="caja">
+    <img id="foto" alt="" />
+    <div class="textos">
+      <p id="frase"></p>
+      <p id="persona"></p>
+    </div>
+  </section>
+</div>
+</body>
+</html>
+

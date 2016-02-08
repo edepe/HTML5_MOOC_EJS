@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head><title>Evento jQuery</title><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+<script type="text/javascript" src="jquery-2.1.4.min.js" > </script>
+<script type="text/javascript" src="jquery.mobile-1.4.5.min.js" > </script>
+<style>
+  *{
+	-webkit-touch-callout: none; /* anula el efecto visual del touch prolongado sobre el objeto */
+	user-select: none; /* user-select, hace el objeto no seleccionable */
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* anula el feedback de color al hacer tap en un link */
+	-webkit-tap-highlight-color: transparent; /* similar anterior en algunos android */
+  }
+
+  body {text-align:center;}
+</style>
+
+<script type="text/javascript">
+$(function(){
+	
+  $.event.special.tap.emitTapOnTaphold = false;	
+  $( "#i1" ).on("tap", function() {$('img').attr('src', 'lamp_on.jpg')});
+  $( "#i1" ).on("taphold", function(){$('img').attr('src', 'lamp_off.jpg')});
+  $( "#i1" ).on("swipe", function(){$('img').attr('src', 'lamp_off.jpg')});
+});
+</script>
+</head>
+<body>
+  <h1>Eventos jQuery</h1>
+  <img src="lamp_off.jpg" id="i1" alt="bombilla">
+</body>
+</html>
+

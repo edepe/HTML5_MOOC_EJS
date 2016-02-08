@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html> <head>
+<meta charset="utf-8"> <title>PUZZLE</title>
+<script src="jquery-2.1.4.js"> </script>
+<script src="jquery-ui.min.js"> </script>
+<script src="jquery.ui.touch-punch.min.js"> </script>
+<style>
+
+* { user-select: none;           /* user-select, hace el objeto no seleccionable */
+	  -webkit-touch-callout: none; /* anula el efecto visual del touch prolongado sobre el objeto */
+	  -webkit-tap-highlight-color: rgba(0,0,0,0); /* anula feedback de color al hacer tap en link */
+	  -webkit-tap-highlight-color: transparent;   /* similar anterior en algunos android */
+
+    margin:0;
+	  padding:0;
+}
+
+#sortable { 
+  list-style-type: none;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+#sortable li { 
+  float: left; 
+  width: 33.3%; 
+}
+
+#sortable li img {
+	vertical-align:bottom;
+	width: 100%; 
+ 	height: auto;
+}
+        /* En apaisado (landscape) anchura = máxima altura */
+@media (orientation:landscape){
+#sortable { width:100vh; } /* 100vh: 100% del alto de ventana visualizada */
+}
+        /* En vertical (portrait) se adapta al máximo ancho */
+@media (orientation:portrait){
+#sortable { width:100%; }
+}
+</style>
+
+<script>
+  $(function() {
+   $( "#sortable" ).sortable();
+   $( "#sortable" ).disableSelection();
+  });
+</script>
+
+</head> <body>
+
+  <ul id="sortable">
+    <li><img  src="rafael_8.jpg" /></li>
+    <li><img  src="rafael_4.jpg" /></li>
+    <li><img  src="rafael_6.jpg" /></li>
+    <li><img  src="rafael_2.jpg" /></li>
+    <li><img  src="rafael_9.jpg" /></li>
+    <li><img  src="rafael_3.jpg" /></li>
+    <li><img  src="rafael_7.jpg" /></li>
+    <li><img  src="rafael_1.jpg" /></li>
+    <li><img  src="rafael_5.jpg" /></li>
+  </ul>
+
+</body></html>
+

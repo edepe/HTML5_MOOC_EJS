@@ -17,6 +17,8 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   var structure;
   var modulocargado;
   var aceditor;
+  //TODO XXX change for the one in the webapp
+  var path_abs = "/webappscode/123/"
   var path_relativo = '';
   var indicemodulo;
   var indicefolder;
@@ -113,9 +115,12 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     _detectaFeaturesInicializaEventos();
 
     $( window ).resize(function() {
-    	 w=window.innerWidth;    	 
-      $('.caja_visor').show();
-      $("#menu").show();    	
+    	//console.log("resize");
+      if(ultima_vista==="hibrida"){
+        visor_width = $("#cvisor").width();
+        editor_width = $('#ceditor').width();
+      }
+
     });
 
     //cuando cambia el selector de modulos
@@ -201,8 +206,8 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
 
     $("#hybrid_view").on("click", function(){
-      $('#ceditor').css("width",editor_width+14); //añado 14px porque lo guardé sin el padding
-      $('#cvisor').css("width",visor_width+14);
+      $('#ceditor').css("width","60%"); //añado 14px porque lo guardé sin el padding
+      $('#cvisor').css("width","38%");
       $("#ceditor").show();
       $("#cvisor").show();
       $(".action_button").removeClass("selected");
@@ -296,7 +301,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     var my = parser.parseFromString(content, "text/html");
     //añadimos etiqueta <base> para los paths relativos
     var base = document.createElement('base');
-    base.setAttribute("href", "/" + path_relativo + "/");
+    base.setAttribute("href", path_abs + path_relativo + "/");
     //doc.head.appendChild(base);
     my.head.insertBefore(base, my.head.firstChild);
 
