@@ -32,7 +32,7 @@ function dirTree(filename, order) {
         info.title = filename;
         var num = 0;
         info.children = fs.readdirSync(filename).filter(function(boy){
-          if(boy.endsWith(".html") || boy.endsWith(".htm") || (fs.lstatSync(filename + '/' + boy).isDirectory()&& boy!=="images")){
+          if(boy.endsWith(".html") || boy.endsWith(".htm") || (fs.lstatSync(filename + '/' + boy).isDirectory()&& boy!=="images" && boy!=="css" && boy!=="javascript" )){
             return true;
           } else{
             return false;
