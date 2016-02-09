@@ -822,13 +822,6 @@
                         "name": "index.html",
                         "title": "3",
                         "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/mod_06/40-ej_bootstrap/puzzle",
-                        "name": "puzzle",
-                        "title": "ejemplos/mod_06/40-ej_bootstrap/puzzle",
-                        "type": "folder",
-                        "children": []
                     }
                 ]
             }
