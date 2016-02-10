@@ -23,10 +23,8 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   var indicemodulo;
   var indicefolder;
   var indicetab;
-  var visor_width;
-  var editor_width;
   var ultima_vista = "hibrida";
-
+  var has_bee_resized = false;
 
   var init = function(options){
     editor = $("#editor");
@@ -52,8 +50,6 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         $('#modulos').append(options);
         _inicializaEnventos();
         _initACEEditor();
-        visor_width = $("#cvisor").width();
-        editor_width = $('#ceditor').width();
         _loadModule(indicemodulo, indicefolder, indicetab);
     });
   };
@@ -114,14 +110,24 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   var _inicializaEnventos = function(){
     _detectaFeaturesInicializaEventos();
 
+    /*
     $( window ).resize(function() {
-    	//console.log("resize");
-      if(ultima_vista==="hibrida"){
-        visor_width = $("#cvisor").width();
-        editor_width = $('#ceditor').width();
+    	//console.log("resize");      
+      if(!$(event.target).hasClass('ui-resizable-w') && ultima_vista==="hibrida"){
+        //resize window. We pass the width of visor and editor to percentage
+        //sólo cuando vengo de hibrida, porque si no es 100%
+        var visor_width = $("#cvisor").width();
+        var editor_width = $('#ceditor').width();
+        var parent = $("#parent").width();
+        var visor_percent = Math.floor(100*visor_width/parent);
+        var editor_percent = Math.floor(100*editor_width/parent);
+        $("#cvisor").width( visor_percent + "%");
+        $('#ceditor').width( editor_percent + "%");
+        //finalmente pongo la variable has_bee_resized a false para indicar que está en porcentajes otra vez
+        has_bee_resized = false;
       }
-
-    });
+    });   
+    */
 
     //cuando cambia el selector de modulos
     $("#modulos").change(function () {
@@ -191,12 +197,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
         }
     });
 
-    $("#edit_view").on("click", function(){        
-        //salvo anchos de visor y editor, sólo cuando vengo de hibrida, porque si no es 100%
-        if(ultima_vista==="hibrida"){
-          visor_width = $("#cvisor").width();
-          editor_width = $('#ceditor').width();
-        }
+    $("#edit_view").on("click", function(){
         $("#ceditor").show();
         $("#cvisor").hide();
         $('#ceditor').css("width","98%");
@@ -216,10 +217,6 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     });
 
     $("#result_view").on("click", function(){
-      if(ultima_vista==="hibrida"){
-        visor_width = $("#cvisor").width();
-        editor_width = $('#ceditor').width();
-      }
       $("#cvisor").show();
       $("#ceditor").hide();
       $('#cvisor').css("width","98%");
@@ -230,6 +227,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
 
     $("#cvisor").resizable({ handles: 'w' });
     $('#cvisor').resize(function(){
+       has_bee_resized = true;
        $('#ceditor').width($("#parent").width()-$("#cvisor").width() - 40);
        //console.log("PARENT: " + $("#parent").width());
        //console.log("EDITOR: " + $('#ceditor').width());
