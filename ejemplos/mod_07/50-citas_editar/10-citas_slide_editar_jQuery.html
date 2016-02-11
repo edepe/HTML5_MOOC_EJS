@@ -6,6 +6,7 @@
 
 <script type="text/javascript" src="javascript/jquery-2.1.4.min.js" ></script>
 <script type="text/javascript" src="javascript/galeria.js" ></script>
+
 <script>
 var t, actual;
 
@@ -20,14 +21,22 @@ function select(i){
   $("#frase").html(galeria[i].frase);
   $("#foto").attr("src", galeria[i].foto);
 
-  clearTimeout(t);    // borra temporizador anterior
+  clearTimeout(t);
   t = setTimeout( function(){select((i + 1) % galeria.length);}, 2000);
-}             // nuevo temporizador con cita siguiente
+}
+
+function generar_selector(){ // regenera la botonera
+  var selector = $("#selector");
+
+  selector.html("");
+  
+  galeria.forEach(function(elem,i) {
+    selector.append("<li><a onClick='select("+i+")'></a></li>");
+  });
+}
 
 $(function (){
-  galeria.forEach(function(elem,i) {
-    $("#selector").append("<li><a onClick='select("+i+")'></a></li>");
-  });
+  generar_selector();
 
   $("#editar").on("click", function(){
     clearTimeout(t);
@@ -49,10 +58,7 @@ $(function (){
        foto:$("#foto_d").html()
     }) - 1;
 
-    $("#selector").html("");
-    galeria.forEach(function(elem,i) {
-      $("#selector").append("<li><a onClick='select("+i+")'></a></li>");
-    });
+    generar_selector();
 
     select(actual);
   })
