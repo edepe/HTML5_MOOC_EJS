@@ -1104,20 +1104,6 @@
                         "type": "file"
                     }
                 ]
-            },
-            {
-                "path": "ejemplos/mod_10/T37-CronometroMovil",
-                "name": "T37-CronometroMovil",
-                "title": "ejemplos/mod_10/T37-CronometroMovil",
-                "type": "folder",
-                "children": [
-                    {
-                        "path": "ejemplos/mod_10/T37-CronometroMovil/10-index.html",
-                        "name": "10-index.html",
-                        "title": "1",
-                        "type": "file"
-                    }
-                ]
             }
         ]
     }
