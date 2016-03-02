@@ -56,7 +56,7 @@
 	}
 	#page-wrap #navtop ul {
 		padding: 0;
-		margin: 0 0 5px 0;
+		margin: 0 0 0 0;
 		height: 35px;
 	}
 	#page-wrap #navtop ul li {
@@ -130,6 +130,7 @@ body{
 	font-family: fira;
 	height: 96%;
 	background-color: #ddd !important;
+	overflow: hidden;
 }
 #page-wrap {
 	width: 100%;
@@ -234,9 +235,29 @@ body{
 
 #page-wrap .contenedor {
 	position: relative;
-	height: 91%;
 	width: 100%;
 	padding: 0 5px;
+}
+@media (max-height: 450px) {
+  #page-wrap .contenedor {
+		height: 70%;
+	}
+}
+@media (min-height: 450px) and (max-height: 599px) {
+  #page-wrap .contenedor {
+		height: 84%;
+	}
+}
+@media (min-height: 600px) and (max-height: 700px) {
+  #page-wrap .contenedor {
+		height: 88%;
+	}
+}
+
+@media (min-height: 700px) {
+  #page-wrap .contenedor {
+		height: 92%;
+	}
 }
 
 #fileInput {
@@ -254,6 +275,9 @@ body{
 .separador{
 	border-left: 1px solid gray;
 }
+.separadorderecha{
+	border-right: 1px solid gray;
+}
 
 select{
 	margin: 8px !important;
@@ -261,6 +285,9 @@ select{
 
 .runner{
 	background-color: #4dbcc9;
+	margin-right: 40px;
+	width: 80px;
+  text-align: center;
 }
 
 

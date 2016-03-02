@@ -15,8 +15,9 @@ function sumatorio() {
 
   var lista = num.value.split(",");
 
-  for (var i=0, acc=0; i<lista.length; i++)
+  for (var i=0, acc=0; i<lista.length; i++) {
     acc += +lista[i];
+  }
 
   num.value = acc;
 }

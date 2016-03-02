@@ -676,6 +676,38 @@
         "type": "folder",
         "children": [
             {
+                "path": "ejemplos/mod_06/00-objects",
+                "name": "00-objects",
+                "title": "ejemplos/mod_06/00-objects",
+                "type": "folder",
+                "children": [
+                    {
+                        "path": "ejemplos/mod_06/00-objects/12-object_dynamic_prop.htm",
+                        "name": "12-object_dynamic_prop.htm",
+                        "title": "1",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/00-objects/13-object_for-in.htm",
+                        "name": "13-object_for-in.htm",
+                        "title": "2",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/00-objects/14-window_inspect_jQuery.htm",
+                        "name": "14-window_inspect_jQuery.htm",
+                        "title": "3",
+                        "type": "file"
+                    },
+                    {
+                        "path": "ejemplos/mod_06/00-objects/15-window_inspect.htm",
+                        "name": "15-window_inspect.htm",
+                        "title": "4",
+                        "type": "file"
+                    }
+                ]
+            },
+            {
                 "path": "ejemplos/mod_06/01-puzzle",
                 "name": "01-puzzle",
                 "title": "ejemplos/mod_06/01-puzzle",
@@ -834,65 +866,41 @@
         "type": "folder",
         "children": [
             {
-                "path": "ejemplos/mod_07/00-arrays",
-                "name": "00-arrays",
-                "title": "ejemplos/mod_07/00-arrays",
+                "path": "ejemplos/mod_07/20-tipos",
+                "name": "20-tipos",
+                "title": "ejemplos/mod_07/20-tipos",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/mod_07/00-arrays/00-object_avatar.htm",
+                        "path": "ejemplos/mod_07/20-tipos/00-object_avatar.htm",
                         "name": "00-object_avatar.htm",
                         "title": "1",
-                        "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/mod_07/00-arrays/01-editar_frases_jQuery_for.html",
-                        "name": "01-editar_frases_jQuery_for.html",
-                        "title": "2",
-                        "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/mod_07/00-arrays/02-editar_frases_jQuery_forEach.html",
-                        "name": "02-editar_frases_jQuery_forEach.html",
-                        "title": "3",
-                        "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/mod_07/00-arrays/03-editar_frases.html",
-                        "name": "03-editar_frases.html",
-                        "title": "4",
                         "type": "file"
                     }
                 ]
             },
             {
-                "path": "ejemplos/mod_07/11-objects",
-                "name": "11-objects",
-                "title": "ejemplos/mod_07/11-objects",
+                "path": "ejemplos/mod_07/30-arrays",
+                "name": "30-arrays",
+                "title": "ejemplos/mod_07/30-arrays",
                 "type": "folder",
                 "children": [
                     {
-                        "path": "ejemplos/mod_07/11-objects/12-object_dynamic_prop.htm",
-                        "name": "12-object_dynamic_prop.htm",
+                        "path": "ejemplos/mod_07/30-arrays/01-editar_frases_jQuery_for.html",
+                        "name": "01-editar_frases_jQuery_for.html",
                         "title": "1",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/mod_07/11-objects/13-object_for-in.htm",
-                        "name": "13-object_for-in.htm",
+                        "path": "ejemplos/mod_07/30-arrays/02-editar_frases_jQuery_forEach.html",
+                        "name": "02-editar_frases_jQuery_forEach.html",
                         "title": "2",
                         "type": "file"
                     },
                     {
-                        "path": "ejemplos/mod_07/11-objects/14-window_inspect_jQuery.htm",
-                        "name": "14-window_inspect_jQuery.htm",
+                        "path": "ejemplos/mod_07/30-arrays/03-editar_frases.html",
+                        "name": "03-editar_frases.html",
                         "title": "3",
-                        "type": "file"
-                    },
-                    {
-                        "path": "ejemplos/mod_07/11-objects/15-window_inspect.htm",
-                        "name": "15-window_inspect.htm",
-                        "title": "4",
                         "type": "file"
                     }
                 ]
