@@ -41,9 +41,6 @@
 	#page-wrap .caja .area #editor {
 	  width: 100%;
 	}
-	#page-wrap #iframe {
-	width: 100%;
-	}
 	#cvisor{
 	  display: block;
 	  }
@@ -203,10 +200,15 @@ body{
 	border-radius: 5px 5px 0px 0px;*/
 
 }
-#page-wrap #iframe {
+#page-wrap #diviframe {
 	background-color: #FFF;
 	height: 95%;
 	padding: 5px;
+	width: 100%;
+}
+.iframe {
+	height: 100%;
+	width: 100%;
 }
 #descripcion {
 	margin-top: 1em;
@@ -281,14 +283,23 @@ select{
 	margin: 8px !important;
 }
 
-.runner{
+#actualizar{
 	background-color: #4dbcc9;
-	margin-right: 40px;
 	width: 80px;
   text-align: center;
+  float: none;
+  margin: 0 auto;
 }
 
+#playbutton {
+  overflow: hidden;
+}
 
+#modulos{
+	width: 80px;
+	float: left;
+}
 
-
-
+#rest_of_buttons{
+	float: right;
+}

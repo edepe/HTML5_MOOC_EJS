@@ -304,13 +304,19 @@ HTMLPlayer.CORE = (function(H,$,undefined){
     my.head.insertBefore(base, my.head.firstChild);
 
     //lo escribimos en el iframe
-    var iframe = document.getElementById('iframe');
-    if(iframe.contentDocument) doc = iframe.contentDocument;
-    else if(iframe.contentWindow) doc = iframe.contentWindow.document;
-    else doc = iframe.document;
-    doc.open();
-    doc.writeln("<!DOCTYPE html>" + my.documentElement.outerHTML);
-    doc.close();
+    var mydiv = document.getElementById('diviframe');
+    var iframe = document.getElementById('diviframe').getElementsByClassName("iframe")[0];
+    mydiv.removeChild(iframe);
+
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute("class", "iframe"); 
+    iframe.setAttribute("frameborder", "0"); 
+    iframe.sandbox="allow-same-origin allow-scripts allow-modals";
+    mydiv.appendChild(iframe);
+    iframe.contentWindow.document.open();
+    iframe.contentWindow.document.write("<!DOCTYPE html>" + my.documentElement.outerHTML);
+    iframe.contentWindow.document.close();
+
   }
 
   var _download_code = function (filename) {
