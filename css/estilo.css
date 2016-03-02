@@ -254,9 +254,15 @@ body{
 	}
 }
 
-@media (min-height: 700px) {
+@media (min-height: 700px) and (max-height: 1400px){
   #page-wrap .contenedor {
 		height: 92%;
+	}
+}
+
+@media (min-height: 1400px) {
+  #page-wrap .contenedor {
+		height: 98%;
 	}
 }
 
