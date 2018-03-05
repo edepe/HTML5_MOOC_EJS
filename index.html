@@ -3,28 +3,28 @@
   <meta charset="utf-8" /><title>Ejemplos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js" ></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script type="text/javascript" src="js/FileSaver.js" ></script>
-  <script type="text/javascript" src="js/HTMLPlayer.js"></script>
-  <script type="text/javascript" src="//vishub.org/apis/iframe_api.js"></script>
+  <script src="js/jquery-1.12.0.min.js" ></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/FileSaver.js" ></script>
+  <script src="js/HTMLPlayer.js"></script>
+  <script src="js/VISH.IframeAPI.js"></script>
 
-  <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/ace/mode-html.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/ace/theme-chrome.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/ace/worker-html.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/ace/ace.js" charset="utf-8"></script>
+  <script src="js/ace/mode-html.js" charset="utf-8"></script>
+  <script src="js/ace/theme-chrome.js" charset="utf-8"></script>
+  <script src="js/ace/worker-html.js" charset="utf-8"></script>
 
   <link href="css/estilo.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
   <div id="page-wrap">
@@ -119,7 +119,7 @@
 </body>
 <script type="text/javascript">
 	$(document).ready(function(){
-    VISH.IframeAPI.init({wapp: true,tracking: true});
+    VISH.IframeAPI.init({wapp: true, tracking: false});
 		HTMLPlayer.CORE.init({});
 	});
   $(function () {
