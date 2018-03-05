@@ -18,7 +18,7 @@ HTMLPlayer.CORE = (function(H,$,undefined){
   var modulocargado;
   var aceditor;
   //TODO XXX change for the one in the webapp
-  var path_abs = "/webappscode/123/"
+  var path_abs = "./"
   var path_relativo = '';
   var indicemodulo;
   var indicefolder;
